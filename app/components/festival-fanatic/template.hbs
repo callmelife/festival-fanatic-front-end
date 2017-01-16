@@ -1,0 +1,32 @@
+
+  <div class='card-holder'>
+    <h3 class='festival-title'>{{festival.title}}</h3>
+    <img src="{{festival.url}}" class="image" alt="Image of Event">
+    <div class='brief-descrition-container'>{{festival.description}}</div>
+    <div class='festival-info-container'>
+      Location: {{festival.location}}<br>
+      Venue: {{festival.venue}}<br>
+      Genre: {{festival.genre}}<br>
+      Ticket Price: {{festival.price}}<br>
+      Date: {{festival.date}}<br>
+      Comment: {{festival.comment}}
+    </div>
+
+    {{#link-to 'festivals/comment'}}
+    <button class='btn btn-default comment-view-btn'>Click Here to Comment on This Festival</button>
+    {{/link-to}}
+
+
+    <form {{action 'comment' on='submit'}}>
+      {{input class='comment-input-box'
+              placeholder='So, how was it?'
+              value=fesitval.comment}}
+
+
+
+      <button type='submit' class='btn btn-xs btn-default post-comment-btn'>Post Your About Your Experience at {{festival.title}}</button>
+
+      <button {{action 'cancel'}} class='btn btn-xs btn-danger cancel-comment-btn'>Cancel</button>
+    </form>
+    <button class='btn btn-danger delete-card-btn' {{action 'delete'}}>Delete Festival</button>
+  </div>

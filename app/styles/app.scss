@@ -1,2 +1,135 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+$black: #000;
+$red: #a50d0d;
+$grey: #b7b7b2;
+$gold: #ffbb00;
+
+.card-holder {
+  background-color: $gold;
+  border-color: $black;
+  border-style: solid;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.festival-title {
+  color: $red;
+  font-family: cursive;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 3%;
+  // margin-left: 46%;
+  margin-top: 3%;
+  text-align: center;
+  // padding-left: 45%;
+}
+
+.view-festival-btn {
+  margin-left: 50%;
+}
+
+.delete-card-btn {
+  margin-bottom: 20px;
+  margin-left: 43%;
+  margin-top: 35px;
+}
+
+.post-comment-btn {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.comment-input-box {
+  height: 80px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-top: 100px;
+  width: 50%;
+}
+
+.background-div {
+  background-color: $gold;
+}
+
+.static-title {
+  color: $red;
+  font-family: cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+.intro-text {
+  color: $red;
+  font-family: cursive;
+  text-align: center;
+}
+
+.post-festival-btn {
+  margin-bottom: 20px;
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+.main-background {
+  background-color: $grey;
+  border: 1px solid $black;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.post-comment-btn {
+  margin-left: 20px;
+}
+
+.brief-descrition-container {
+  border: 1px solid $black;
+  height: 260px;
+  margin-left: 55%;
+  width: 40%;
+}
+
+.cancel-comment-btn {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.festival-info-container {
+  height: 60px;
+  margin-left: 5%;
+  margin-top: 20px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.image {
+  background-color: $grey;
+  border-color: $black;
+  border-style: dashed;
+  float: left;
+  height: 260px;
+  margin-left: 5%;
+
+  width: 40%;
+}
+
+
+.img-container {
+  border-color: $black;
+  border-style: dashed;
+  display: inline-flex;
+  height: 260px;
+  margin-left: 40px;
+  margin-top: 35px;
+  width: 450px;
+}
+// .background-container {
+//   background-image: url("http://promotionmusicnews.com/promotionmusicnews.com/html/wp-content/uploads/EDM-Festival.jpg");
+// }

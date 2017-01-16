@@ -6,6 +6,7 @@
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
+        <li>{{#link-to "festivals"}}Festivals{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -21,12 +22,26 @@
   </div>
 </nav>
 
-<h1>Welcome to Ember!</h1>
+<div class='background-div'>
+  {{#if isAuthenticated}}
+  <h1 class='static-title'>Festival Fanatic!</h1>
+  <h3 class=intro-text>Now that Your signed in, lets get down to business</h3>
 
-{{#each flashMessages.queue as |flash|}}
-  {{flash-message flash=flash}}
-{{/each}}
 
-<div class="col-md-8 col-md-offset-2">
-  {{outlet}}
+
+  {{else}}
+  <h1 class='static-title'>Welcome to Festival Fanatic!</h1>
+  <h3 class='intro-text'>Festival Fanatic Wants To Help Shape Your Experiences with the Wonderful World of Music Festivals!</h3>
+
+
+  {{/if}}
+
+
+  {{#each flashMessages.queue as |flash|}}
+    {{flash-message flash=flash}}
+  {{/each}}
+
+  <div class="col-md-8 col-md-offset-2">
+    {{outlet}}
+  </div>
 </div>

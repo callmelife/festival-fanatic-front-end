@@ -10,6 +10,16 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
+  this.route('festivals', function() {
+    this.route('new');
+
+  });
+  this.route('festivals/festival');
+  this.route('festivals/comment');
+  this.route('festivals/new');
+  this.route('festival');
+  this.route('festival/view');
+
 });
 
 export default Router;

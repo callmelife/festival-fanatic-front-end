@@ -1,0 +1,40 @@
+<form {{action 'save' on='submit'}}>
+  Current Title: {{festival.title}}
+  {{input placeholder='Festival Name'
+          value=festival.title}}
+          <br>
+  Current Description: {{festival.description}}
+  {{input placeholder='Festival Description'
+          value=festival.description}}
+          <br>
+  Current  Genre: {{festival.genre}}
+  {{input placeholder='Festival Genre'
+          value=festival.genre}}
+          <br>
+  Current  Location: {{festival.location}}
+  {{input placeholder='Festival Location'
+          value=festival.location}}
+          <br>
+  Current Venue: {{festival.venue}}
+  {{input placeholder='Festival Venue'
+          value=festival.venue}}
+          <br>
+  Current Image URL: {{festival.url}}
+  {{input placeholder='Enter Image URL'
+          value=festival.url}}
+          <br>
+  Festival Date: {{festival.date}}
+  {{input placeholder='Upcoming Festival Date or Past Festival Date'
+          value=festival.date}}
+          <br>
+  Festival Price: {{festival.price}}
+  {{input placeholder='Ticket Price'
+          value=festival.price}}
+          <br>
+  Current Comment on Festival: {{festival.comment}}
+  {{input placeholder="Tell us how it was or how excited you are to go!"
+          value=festival.comment}}
+          <br>
+          <button type='submit' class='btn btn-xs'>Save!</button>
+          <button {{action 'cancel'}} class='btn btn-xs btn-danger'>Cancel</button>
+</form>
