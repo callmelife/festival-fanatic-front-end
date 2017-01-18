@@ -1,6 +1,6 @@
-import DS from 'ember-data';
-
-export default DS.Model.extend({
-  content: DS.attr('string'),
-  festival: DS.belongsTo('festival'),
-});
+// import DS from 'ember-data';
+//
+// export default DS.Model.extend({
+//   content: DS.attr('string'),
+//   festival: DS.belongsTo('festival'),
+// });
