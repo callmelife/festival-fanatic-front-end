@@ -10,6 +10,7 @@ export default DS.Model.extend({
   date: DS.attr('string'),
   price: DS.attr('number'),
   hidden: DS.attr('boolean'),
-  comments: DS.hasMany('comment'),
+  comment: DS.attr('string'),
+  editable: DS.attr('boolean'),
   // items: DS.hasMany('item'),
 });
