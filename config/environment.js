@@ -51,7 +51,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/festival-fanatic-front-end';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://evening-oasis-74949.herokuapp.com/festivals';
+    ENV.apiHost = 'https://evening-oasis-74949.herokuapp.com';
   }
 
   return ENV;
