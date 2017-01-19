@@ -34,16 +34,89 @@ $dark-orange: #9e4801;
 // font-family: 'Arizonia', cursive;
 // font-family: 'Yesteryear', cursive;
 
+.back-to-festivals {
+  font-family: 'Eagle Lake', cursive;
+  margin-left: 45%;
+  margin-top: 20px;
+}
+
+.container-fluid {
+  background-color: $red;
+    border-color: $red;
+
+}
+
+.nav {
+  background-color: $red;
+    border-color: $red;
+
+}
+
+#navigation {
+  background-color: $red;
+    border-color: $red;
+}
+
+.navbar-brand {
+  background-color: $red;
+    border-color: $red;
+}
+
 .navbar-nav {
+  background-color: $red;
+    border-color: $red;
   font-family: 'Eagle Lake', cursive;
   font-size: 20px;
  }
 
 .navbar {
+  background-color: $red;
+  border-color: $red;
   margin-top: 20px;
 }
 
+.nav {
+  background-color: $red;
 
+}
+.title-input {
+  margin-bottom: 15px;
+}
+
+.row-one,
+.row-two,
+.row-three,
+.row-four,
+ {
+  background-color: $white;
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 40%;
+}
+
+.comments-section {
+  background-color: $white;
+  border-radius: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  margin-right: 20px;
+  margin-top: 950px;
+  width: 90%;
+}
+
+.comment-input {
+  padding-bottom: 80px;
+}
+//
+// .final-row {
+//   margin-bottom: 200px;
+// }
 .navbar-brand {
   font-family: 'Eagle Lake', cursive;
 }
@@ -120,12 +193,19 @@ $dark-orange: #9e4801;
 }
 
 .festivals-footer {
+  background-color: $white;
+  // border: 1px $white solid;
+  border-radius: 50px;
   color: $red;
   font-family: 'Norican', cursive;
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 20px;
+  margin-left: 22%;
   margin-top: 30px;
+
   text-align: center;
+  width: 650px;
+
 }
 
 .cancel-submit-btn {
@@ -135,15 +215,46 @@ $dark-orange: #9e4801;
 
 .submit-festival{
   margin-left: 20%;
+  margin-bottom: 20px;
+}
+
+.descr {
+  // height: 850px;
+  padding-bottom: 50px;
+  overflow: scroll;
+}
+
+.loc {
+  height: 800px;
+  padding-bottom: 100px;
+  overflow: visible;
+}
+
+li {
+  font-size: 20px;
+  text-align: left;
+}
+
+.piece-one,
+.piece-two,
+.piece-three,
+.piece-four,
+.piece-five,
+.piece-six,
+.piece-seven,
+.piece-eight, {
+width: 100%;
 }
 
 .instructions {
+  display: block;
   font-family: 'Aladin', cursive;
   font-size: 25px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
   text-align: center;
+  width: 100%;
 }
 
 .input-area {
@@ -161,22 +272,28 @@ $dark-orange: #9e4801;
   padding-top: 3px;
 }
 
+
+
 .enter-info-container{
   background-color: $grey;
   border-radius: 10px;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
   width: 100%;
 }
 
-
-
 .static-title {
+  background-color: $white;
+  // border: 1px $white solid;
+  border-radius: 30px;
   color: $red;
   font-family: 'Trade Winds', cursive;
-  font-size: 50px;
+  font-size: 70px;
   margin-bottom: 20px;
+  margin-left: 26%;
   text-align: center;
+  width: 600px;
 }
 
 .festival-title {
@@ -198,9 +315,11 @@ $dark-orange: #9e4801;
   border-radius: 20px;
   height: auto;
   margin-bottom: 10px;
-  margin-left: 5%;
+  margin-left: 10%;
   margin-top: 10px;
-  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
 }
 
 .festival-info-container {
@@ -224,7 +343,6 @@ $dark-orange: #9e4801;
   display: inline-block;
   height: auto;
   margin-bottom: 5px;
-  margin-left: 10%;
   margin-right: 15px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -241,7 +359,6 @@ $dark-orange: #9e4801;
   display: inline-block;
   height: auto;
   margin-bottom: 5px;
-  margin-left: 15%;
   margin-right: 15px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -257,7 +374,6 @@ $dark-orange: #9e4801;
   display: inline-block;
   height: auto;
   margin-bottom: 5px;
-  margin-left: 15%;
   padding-bottom: 3px;
   padding-left: 5px;
   padding-right: 5px;
@@ -288,7 +404,6 @@ $dark-orange: #9e4801;
   display: inline-block;
   height: auto;
   margin-bottom: 5px;
-  margin-left: 25%;
   padding-bottom: 3px;
   padding-left: 5px;
   padding-right: 5px;
@@ -302,9 +417,7 @@ $dark-orange: #9e4801;
   border-radius: 5px;
   height: 80px;
   margin-bottom: 20px;
-  margin-left: 5%;
   margin-top: 25px;
-  overflow: scroll;
   padding-bottom: 3px;
   padding-left: 5px;
   padding-top: 3px;
@@ -361,17 +474,7 @@ $dark-orange: #9e4801;
   margin-top: 20px;
 }
 
-.main-background {
- background: linear-gradient(bottom right, $dark-grey, $light-grey);
 
-  border: 10px $white ridge;
-  border-radius: 20px;
-  margin-bottom: 50px;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  width: 100%;
-}
 
 
 
@@ -421,19 +524,45 @@ $dark-orange: #9e4801;
   width: 450px;
 }
 
+.main-background {
 
+      background-image:
+    url('http://www.kathykwylie.com/wp-content/uploads/2012/01/Miles-to-Go-Quilting.jpg');
+      // url('http://previews.123rf.com/images/sumkinn/sumkinn1402/sumkinn140200088/26193849-Geometric-seamless-pattern-with-intersecting-lines-rounded-tiles-design-for-a-background-booklets-wa-Stock-Vector.jpg');
+    // url('http://patterncooler.com/gen/index/w/interlocking_geometric_stars_pattern-341.jpg');
+    // url('https://thumbs.dreamstime.com/x/geometric-pattern-6646524.jpg');
+    // url('http://www.howdesign.com/wp-content/uploads/blackandwhitepatterns-02-091815-501-600x6001.jpg');
+    // url('https://s-media-cache-ak0.pinimg.com/564x/f6/7e/4e/f67e4efd42f1ae3590a2834857a36840.jpg');
+    // url('http://images.naldzgraphics.net/2012/01/6-with-squares.jpg');
+    // url(http://edmchicago.com/wp-content/uploads/2015/06/EDC15-1280x800.jpg);
+    // url('https://www.bhmpics.com/wallpapers/rave_lights-1280x800.jpg');
+
+    // url('http://www.travelweekly.com/uploadedImages/All_TW_Art/2016/053016/T0530ELECTRICDAISYCARNIVAL_C_HR.jpg?n=8098&width=1540&height=866&mode=crop&Anchor=MiddleCenter')
+  // url('http://www.edmmagazine.com/wp-content/uploads/2015/06/edc-vegas-day-two-press-2015-billboard-650.jpg')
+    // url('http://farm8.staticflickr.com/7336/9406061959_4e967c515a_b.jpg');
+
+    // url('http://i1.mirror.co.uk/incoming/article1709852.ece/ALTERNATES/s1200/Tomorrowland%20festival.jpg');
+    // url('http://www.tomorrowland.com/global/img/og.jpg');
+
+
+    //  url('http://promotionmusicnews.com/promotionmusicnews.com/html/wp-content/uploads/EDM-Festival.jpg'
+    //  );
+
+  border: 10px $white ridge;
+  border-radius: 20px;
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  min-height: 900px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
 
 .background-container {
-  background-image:
 
-  // url('http://www.travelweekly.com/uploadedImages/All_TW_Art/2016/053016/T0530ELECTRICDAISYCARNIVAL_C_HR.jpg?n=8098&width=1540&height=866&mode=crop&Anchor=MiddleCenter')
-// url('http://www.edmmagazine.com/wp-content/uploads/2015/06/edc-vegas-day-two-press-2015-billboard-650.jpg')
-  // url('http://farm8.staticflickr.com/7336/9406061959_4e967c515a_b.jpg');
+  background-image: url('http://st2.depositphotos.com/2420203/8239/v/450/depositphotos_82393252-stock-illustration-seamless-abstract-interlocking-geometric-background.jpg');
+  //  url('https://www.blindsgalore.com/blog/wp-content/uploads/2013/11/6A_edit.gif');
+  // background: linear-gradient(bottom right, $dark-grey, $light-grey);
 
-  url('http://i1.mirror.co.uk/incoming/article1709852.ece/ALTERNATES/s1200/Tomorrowland%20festival.jpg');
-  // url('http://www.tomorrowland.com/global/img/og.jpg');
-
-
-  //  url('http://promotionmusicnews.com/promotionmusicnews.com/html/wp-content/uploads/EDM-Festival.jpg'
-  //  );
 }

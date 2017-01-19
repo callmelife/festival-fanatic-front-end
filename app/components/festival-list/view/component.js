@@ -21,6 +21,13 @@ export default Ember.Component.extend({
   //   }
   // }),
 
+  // isEmpty: Ember.computed('festival', function(){
+  //   let items = this.get('festivals');
+  //   if (festival.ids().length > 0) {
+  //     alert('success!')
+  //   }
+  // }),
+
   model (params) {
     return this.get('store').findRecord('festival', params.festival_id);
   },
