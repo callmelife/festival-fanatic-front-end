@@ -1,5 +1,5 @@
-import ActiveModelAdapter from 'active-model-adapter';
 import ENV from 'festival-fanatic/config/environment';
+import ActiveModelAdapter from 'active-model-adapter';
 
 import Ember from 'ember';
 
