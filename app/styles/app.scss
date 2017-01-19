@@ -1,2 +1,439 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+@import url('https://fonts.googleapis.com/css?family=Aladin|Eagle+Lake|Hanalei+Fill|Joti+One|Lily+Script+One|Metal+Mania|New+Rocker|Ravi+Prakash|Trade+Winds|UnifrakturCook:700|UnifrakturMaguntia|Arizonia|Kaushan+Script|Merienda+One|Niconne|Norican|Yesteryear');
+
+
+
+$black: #000;
+$red: #a50d0d;
+$grey: #b7b7b2;
+$gold: #edc525;
+$white: #fff;
+$orange: #db6e08;
+$purple: #56037c;
+$dark-blue: #02074c;
+$blue: #101ff2;
+$light-blue: #99e8ef;
+$teal: #8af2d9;
+$sky-blue: #6aebf2;
+$light-grey: #bcbcbc;
+$dark-grey: #595555;
+$dark-orange: #9e4801;
+// font-family: 'Trade Winds', cursive;
+// font-family: 'UnifrakturCook', cursive;
+// font-family: 'Joti One', cursive;
+// font-family: 'Eagle Lake', cursive;
+// font-family: 'Ravi Prakash', cursive;
+// font-family: 'New Rocker', cursive;
+// font-family: 'Hanalei Fill', cursive;
+// font-family: 'Metal Mania', cursive;
+// font-family: 'Lily Script One', cursive;
+// font-family: 'Aladin', cursive;
+// font-family: 'UnifrakturMaguntia', cursive;
+// font-family: 'Norican', cursive;
+// font-family: 'Arizonia', cursive;
+// font-family: 'Yesteryear', cursive;
+
+.navbar-nav {
+  font-family: 'Eagle Lake', cursive;
+  font-size: 20px;
+ }
+
+.navbar {
+  margin-top: 20px;
+}
+
+
+.navbar-brand {
+  font-family: 'Eagle Lake', cursive;
+}
+
+.sub-welcome-info {
+  background-color: $grey;
+  color: $red;
+  border-radius: 15px;
+  font-family: 'Aladin', cursive;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.welcome-info {
+  background-color: $grey;
+  color: $red;
+  border-radius: 15px;
+  font-family: 'Aladin', cursive;
+  font-size: 50px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  width: auto;
+}
+
+.users-page {
+  background-color: $grey;
+  border-radius: 15px;
+  color: $red;
+  font-family: 'Aladin', cursive;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.not-logged-in {
+  background-color: $grey;
+  border-radius: 15px;
+  color: $red;
+  font-family: 'Aladin', cursive;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.brief-descrition-container {
+  // background-color:
+  border: 1px $black solid;
+  border-radius: 15px;
+  display: block;
+  font-family: 'Aladin', cursive;
+  font-size: 25px;
+  height: 260px;
+  margin-left: 65%;
+  padding-left: 3px;
+  padding-right: 3px;
+  overflow: scroll;
+  overflow-y: scroll;
+  text-align: center;
+  text-overflow: ellipsis;
+  width: 30%;
+}
+
+.festivals-footer {
+  color: $red;
+  font-family: 'Norican', cursive;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cancel-submit-btn {
+  margin-left: 30%;
+
+}
+
+.submit-festival{
+  margin-left: 20%;
+}
+
+.instructions {
+  font-family: 'Aladin', cursive;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.input-area {
+  background-color: $red;
+  border-radius: 5px;
+  color: $white;
+  height: auto;
+  margin-top: 5px;
+}
+
+.input-field {
+  font-family: 'Trade Winds', cursive;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+}
+
+.enter-info-container{
+  background-color: $grey;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+
+
+.static-title {
+  color: $red;
+  font-family: 'Trade Winds', cursive;
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.festival-title {
+  color: $white;
+  font-family: 'Metal Mania';
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 3%;
+  // margin-left: 46%;
+  margin-top: 3%;
+  text-align: center;
+  // padding-left: 45%;
+}
+
+.card-holder {
+  // background-color: $red;
+  background: linear-gradient(right, $teal , $purple);
+  border: 10px $gold ridge;
+  border-radius: 20px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.festival-info-container {
+  background-color: $orange;
+  border: 10px $dark-orange outset;
+  border-radius: 15px;
+  color: $black;
+  height: auto;
+  // margin-bottom: 20%;
+  margin-left: 5%;
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 90%;
+}
+
+.info-container-location {
+  background-color: $grey;
+  border: 1px $black solid;
+  border-radius: 5px;
+  color: $black;
+  display: inline-block;
+  height: auto;
+  margin-bottom: 5px;
+  margin-left: 10%;
+  margin-right: 15px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  width: auto;
+}
+
+.info-container-venue {
+  background-color: $grey;
+  border: 1px $black solid;
+  border-radius: 5px;
+  color: $black;
+  display: inline-block;
+  height: auto;
+  margin-bottom: 5px;
+  margin-left: 15%;
+  margin-right: 15px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  width: auto;
+}
+
+.info-container-genre {
+  background-color: $grey;
+  border: 1px $black solid;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin-bottom: 5px;
+  margin-left: 15%;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  width: auto;
+}
+
+.info-container-price {
+  background-color: $grey;
+  border: 1px $black solid;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin-bottom: 5px;
+  margin-left: 25%;
+  margin-top: 20px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  width: auto;
+}
+
+.info-container-date {
+  background-color: $grey;
+  border: 1px $black solid;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin-bottom: 5px;
+  margin-left: 25%;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  width: auto;
+}
+
+.info-container-comment {
+  background-color: $grey;
+  border: 1px $black solid;
+  border-radius: 5px;
+  height: 80px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-top: 25px;
+  overflow: scroll;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-top: 3px;
+  width: 90%;
+}
+
+.view-festival-btn {
+  font-family: 'Eagle Lake', cursive;
+  margin-bottom: 15px;
+  margin-left: 40%;
+  margin-top: 25px;
+}
+
+.delete-card-btn {
+  font-family: 'Eagle Lake', cursive;
+  margin-bottom: 20px;
+  margin-left: 45%;
+  margin-top: 15px;
+}
+
+.post-comment-btn {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.edit-festival-btn {
+  font-family: 'Eagle Lake', cursive;
+  margin-left: 40%;
+  margin-top: 50px;
+}
+
+.comment-input-box {
+  height: 80px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-top: 100px;
+  width: 50%;
+}
+
+.background-div {
+  background-color: $gold;
+}
+
+.intro-text {
+  color: $red;
+  font-family: cursive;
+  text-align: center;
+}
+
+.post-festival-btn {
+  font-family: 'Eagle Lake', cursive;
+  margin-bottom: 20px;
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+.main-background {
+ background: linear-gradient(bottom right, $dark-grey, $light-grey);
+
+  border: 10px $white ridge;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+
+
+.cancel-comment-btn {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+.festival-owner {
+  font-size: 20px;
+  text-align: center;
+}
+
+.festival-owner-div {
+  background: $grey;
+  border: 3px $white solid;
+  border-radius: 15px;
+  font-family: 'Aladin', cursive;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.image {
+  background-color: $grey;
+  // border: 3px $white solid;
+  border-radius: 20px;
+  float: left;
+  height: 260px;
+  margin-left: 5%;
+  width: 55%;
+}
+//
+
+
+.img-container {
+  border-color: $black;
+  border-radius: 5px;
+  border-style: dashed;
+  display: inline-flex;
+  height: 260px;
+  margin-left: 40px;
+  margin-top: 35px;
+  width: 450px;
+}
+
+
+
+.background-container {
+  background-image:
+
+  // url('http://www.travelweekly.com/uploadedImages/All_TW_Art/2016/053016/T0530ELECTRICDAISYCARNIVAL_C_HR.jpg?n=8098&width=1540&height=866&mode=crop&Anchor=MiddleCenter')
+// url('http://www.edmmagazine.com/wp-content/uploads/2015/06/edc-vegas-day-two-press-2015-billboard-650.jpg')
+  // url('http://farm8.staticflickr.com/7336/9406061959_4e967c515a_b.jpg');
+
+  url('http://i1.mirror.co.uk/incoming/article1709852.ece/ALTERNATES/s1200/Tomorrowland%20festival.jpg');
+  // url('http://www.tomorrowland.com/global/img/og.jpg');
+
+
+  //  url('http://promotionmusicnews.com/promotionmusicnews.com/html/wp-content/uploads/EDM-Festival.jpg'
+  //  );
+}

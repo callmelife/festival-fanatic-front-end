@@ -6,8 +6,11 @@ export default Ember.Component.extend({
   isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
 
   actions: {
-    signOut () {
-      this.sendAction('signOut');
+    save () {
+      this.sendAction('save', this.get('festival'));
+    },
+    cancel () {
+      this.sendAction('cancel', this.get('festival'));
     },
   },
 });

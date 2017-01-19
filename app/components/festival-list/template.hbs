@@ -1,0 +1,13 @@
+<div class='card-holder'>
+  <h3 class='festival-title'>{{festival.title}}</h3>
+  <img src="{{festival.url}}" class="image" alt="Image of Event">
+  <div class='brief-descrition-container'>{{festival.description}}</div>
+
+  {{#link-to 'festival' festival}}
+  <button class='btn btn-default btn-success view-festival-btn'>Click Here To View This Festival</button>
+  {{/link-to}}
+
+  {{#if festival.editable}}
+    <button class='btn btn-danger delete-card-btn' {{action 'delete'}}>Delete Festival</button>
+  {{/if}}
+</div>
