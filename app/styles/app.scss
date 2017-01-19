@@ -43,6 +43,7 @@ $dark-orange: #9e4801;
   margin-top: 20px;
 }
 
+
 .navbar-brand {
   font-family: 'Eagle Lake', cursive;
 }
@@ -77,8 +78,8 @@ $dark-orange: #9e4801;
 
 .users-page {
   background-color: $grey;
-  color: $red;
   border-radius: 15px;
+  color: $red;
   font-family: 'Aladin', cursive;
   padding-left: 20px;
   padding-right: 20px;
@@ -92,10 +93,11 @@ $dark-orange: #9e4801;
   border-radius: 15px;
   color: $red;
   font-family: 'Aladin', cursive;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
-  padding-bottom: 30px;
   text-align: center;
 }
 
