@@ -7,6 +7,7 @@ module.exports = function (environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    apiHost: 'http://localhost:3000/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -49,9 +50,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.apiHost = 'https://evening-oasis-74949.herokuapp.com/';
     ENV.rootURL = '/festival-fanatic-front-end';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://evening-oasis-74949.herokuapp.com/';
   }
 
   return ENV;

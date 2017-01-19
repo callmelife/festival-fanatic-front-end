@@ -1,8 +1,7 @@
-import AjaxService from 'ember-ajax/services/ajax';
-import ENV from 'festival-fanatic/config/environment';
-
 import Ember from 'ember';
 
+import AjaxService from 'ember-ajax/services/ajax';
+import ENV from 'festival-fanatic/config/environment';
 
 export default AjaxService.extend({
   host: ENV.apiHost,
