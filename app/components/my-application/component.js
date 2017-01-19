@@ -10,4 +10,7 @@ export default Ember.Component.extend({
       this.sendAction('signOut');
     },
   },
+  model (params) {
+    return this.get('store').findRecord('festival', params.festival_id);
+  },
 });

@@ -4,11 +4,11 @@
   <img src="{{festival.url}}" class="image" alt="Image of Event">
   <div class='brief-descrition-container'>{{festival.description}}</div>
   <div class='festival-info-container'>
-    <div class='info-container-location'><strong>Location:</strong> {{festival.location}}</div>
-    <div class='info-container-venue'><strong>Venue:</strong> {{festival.venue}}</div>
+    <div class='info-container-location'><strong>Location:</strong> {{festival.location}}</div><br>
+    <div class='info-container-venue'><strong>Venue:</strong> {{festival.venue}}</div><br>
     <div class='info-container-genre'><strong>Genre:</strong> {{festival.genre}}</div><br>
-    <div class='info-container-price'><strong>Ticket Price:</strong> ${{festival.price}}</div>
-    <div class='info-container-date'><strong>Date:</strong> {{festival.date}}</div>
+    <div class='info-container-price'><strong>Ticket Price:</strong> ${{festival.price}}</div><br>
+    <div class='info-container-date'><strong>Date:</strong> {{festival.date}}</div><br>
     <div class='info-container-comment'><strong>Comment:</strong> {{festival.comment}}</div>
   </div>
 
@@ -17,6 +17,12 @@
     <button class='btn btn-primary edit-festival-btn'>Edit This Festival's information</button>
   {{/link-to}}
 {{/if}}
+
+{{#link-to 'festivals'}}
+  <div class='back-to-festivals'>
+    <button class='btn btn-default btn-success'>View All Festivals</button>
+  </div>
+{{/link-to}}
 
 {{!-- {{#if festival.editable}}
     <button class='btn btn-danger delete-card-btn' {{action 'delete'}}>Delete Festival</button>
