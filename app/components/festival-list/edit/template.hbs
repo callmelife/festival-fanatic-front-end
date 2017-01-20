@@ -34,16 +34,17 @@
             class='input-area'
             value=festival.venue}}<br>
     </div>
-    <div class='instructions'>Let's see a picture of what we're working with! Enter a valid image URL below to give your friends an idea of what you've seen! Note: Festival Fanatic only consumes valid URLs (.jpg, .png, .gif)</div>
+    <div class='instructions'>Let's see a picture of what we're working with! Enter a valid image URL below to give your friends an idea of what you've seen! Note: Festival Fanatic only consumes valid URLs (.jpg, .png, .gif).</div>
     <div class='input-field'>
     Current Image URL: {{festival.url}}
     {{input placeholder='Enter Image URL Here...'
+            required='true'
             class='input-area'
             value=festival.url
                               }}<br>
 
     </div>
-    <div class='instructions'>Is the event upcoming? Have you already been to it? Maybe the date hasn't been released yet! Festival Fanatic understands that finding a date on events can be a difficult task - so we've given you the option to display the most accurate terms as possible. All the following are acceptable: '12/31/1999', 'Already happened and I missed it!', 'It's coming up, but I'm not sure when!' </div>
+    <div class='instructions'>When was the event? Is it upcoming? Select a day based on when you think it is! </div>
     <div class='input-field'>
     Festival Date: {{festival.date}}
     {{input placeholder='mm/dd/yyyy'
@@ -51,10 +52,10 @@
             class='input-area'
             value=festival.date}}<br>
     </div>
-    <div class='instructions'>How much did this festival set you back (financially speaking)? $200? €100? Nothing? Don't remember? That's OK - Being a Festival Fanatic isn't about the money.</div>
+    <div class='instructions'>How much did this festival set you back in US Dollars? </div>
     <div class='input-field'>
     Festival Price: ${{festival.price}}
-    {{input placeholder='Enter Ticket Price Here...'
+    {{input placeholder='Enter price here (Numbers only)...'
             type='number'
             class='input-area'
             value=festival.price}}<br>
