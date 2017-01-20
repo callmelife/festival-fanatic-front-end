@@ -8,6 +8,8 @@ export default Ember.Component.extend({
   isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
   owner: JSON.parse(localStorage.getItem('storage:auth')).email,
 
+
+
   // userIsOwner: Ember.computed('festival', function(){
   //   let objOwner = this.get('auth.credentials.email');
   //   let currentUser = JSON.parse(localStorage.getItem('storage:auth')).email;

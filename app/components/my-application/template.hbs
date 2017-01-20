@@ -7,6 +7,8 @@
         {{#if isAuthenticated}}
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
         <li>{{#link-to "festivals"}}Festivals{{/link-to}}</li>
+        <li>{{#link-to 'festivals/new'}}Add Festival{{/link-to}}</li>
+
         {{else}}
         <li>{{#link-to "festivals"}}Festivals{{/link-to}}</li>
         {{/if}}
@@ -25,6 +27,18 @@
 </nav>
 
 {{#if isAuthenticated}}
+  {{!-- <div class='static-title-div'>
+    <h2 class='static-title'>Festival Fanatic</h2>
+
+    {{#if isAuthenticated}}
+      <div>
+        {{#link-to 'festivals/new'}}
+          <button class='btn btn-primary post-festival-btn'>Click Here to Add a Festival</button>
+        {{/link-to}}
+      </div>
+    {{/if}}
+  </div> --}}
+
 {{else}}
 <div class='welcome-info'>
   Hello and Welcome to Festival Fanatic!<br>

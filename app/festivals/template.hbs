@@ -1,11 +1,11 @@
 <div class='main-background'>
   <h2 class='static-title'>Festival Fanatic</h2>
 
-    <div>
+
       {{#link-to 'festivals/new'}}
         <button class='btn btn-primary post-festival-btn'>Click Here to Add a Festival</button>
       {{/link-to}}
-    </div>
+
 
   {{#each model as |festival|}}
     {{festival-list    festival=festival

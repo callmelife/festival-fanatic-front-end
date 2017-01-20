@@ -34,6 +34,17 @@ $dark-orange: #9e4801;
 // font-family: 'Arizonia', cursive;
 // font-family: 'Yesteryear', cursive;
 
+.static-title-div {
+  background: linear-gradient(bottom left, $dark-grey, $light-grey);
+  border: 10px $white ridge;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  margin-left: 17%;
+  padding-top: 20px;
+  text-align: center;
+  width: 65%
+}
+
 .navbar-nav {
   font-family: 'Eagle Lake', cursive;
   font-size: 20px;
@@ -42,6 +53,7 @@ $dark-orange: #9e4801;
 .navbar {
   margin-top: 20px;
 }
+
 
 
 .navbar-brand {
@@ -77,7 +89,9 @@ $dark-orange: #9e4801;
 }
 
 .users-page {
-  background-color: $grey;
+  background: linear-gradient(bottom right, $dark-grey, $light-grey);
+  border: 10px $white ridge;
+  // background-color: $grey;
   border-radius: 15px;
   color: $red;
   font-family: 'Aladin', cursive;
@@ -89,7 +103,9 @@ $dark-orange: #9e4801;
 }
 
 .not-logged-in {
-  background-color: $grey;
+  background: linear-gradient(bottom right, $dark-grey, $light-grey);
+  border: 10px $white ridge;
+  // background-color: $grey;
   border-radius: 15px;
   color: $red;
   font-family: 'Aladin', cursive;
@@ -120,12 +136,16 @@ $dark-orange: #9e4801;
 }
 
 .festivals-footer {
+  background-color: $white;
+  border-radius: 30px;
   color: $red;
   font-family: 'Norican', cursive;
   font-size: 30px;
   margin-bottom: 20px;
+  margin-left: 31%;
   margin-top: 30px;
   text-align: center;
+  width: 39%;
 }
 
 .cancel-submit-btn {
@@ -172,17 +192,21 @@ $dark-orange: #9e4801;
 
 
 .static-title {
+  background-color: $white;
+  border-radius: 15px;
   color: $red;
   font-family: 'Trade Winds', cursive;
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 20px;
+  margin-left: 30%;
   text-align: center;
+  width: 40%;
 }
 
 .festival-title {
   color: $white;
   font-family: 'Metal Mania';
-  font-size: 30px;
+  font-size: 40px;
   font-style: italic;
   margin-bottom: 3%;
   // margin-left: 46%;
@@ -197,10 +221,10 @@ $dark-orange: #9e4801;
   border: 10px $gold ridge;
   border-radius: 20px;
   height: auto;
-  margin-bottom: 10px;
-  margin-left: 5%;
-  margin-top: 10px;
-  width: 90%;
+  margin-bottom: 100px;
+  margin-left: 10%;
+  margin-top: 40px;
+  width: 80%;
 }
 
 .festival-info-container {
@@ -313,8 +337,8 @@ $dark-orange: #9e4801;
 
 .view-festival-btn {
   font-family: 'Eagle Lake', cursive;
-  margin-bottom: 15px;
-  margin-left: 40%;
+  margin-bottom: 30px;
+  margin-left: 35%;
   margin-top: 25px;
 }
 
@@ -326,7 +350,7 @@ $dark-orange: #9e4801;
 }
 
 .post-comment-btn {
-  margin-left: 50px;
+  margin-left: 35%;
   margin-top: 10px;
 }
 
@@ -362,8 +386,7 @@ $dark-orange: #9e4801;
 }
 
 .main-background {
- background: linear-gradient(bottom right, $dark-grey, $light-grey);
-
+ background-image: url('http://www.kathykwylie.com/wp-content/uploads/2012/01/Miles-to-Go-Quilting.jpg');
   border: 10px $white ridge;
   border-radius: 20px;
   margin-bottom: 50px;
@@ -400,14 +423,15 @@ $dark-orange: #9e4801;
 
 .image {
   background-color: $grey;
-  // border: 3px $white solid;
+
+  border: 3px $white solid;
   border-radius: 20px;
   float: left;
   height: 260px;
   margin-left: 5%;
   width: 55%;
 }
-//
+
 
 
 .img-container {
@@ -425,12 +449,13 @@ $dark-orange: #9e4801;
 
 .background-container {
   background-image:
+  url('http://st2.depositphotos.com/2420203/8239/v/450/depositphotos_82393252-stock-illustration-seamless-abstract-interlocking-geometric-background.jpg');
 
   // url('http://www.travelweekly.com/uploadedImages/All_TW_Art/2016/053016/T0530ELECTRICDAISYCARNIVAL_C_HR.jpg?n=8098&width=1540&height=866&mode=crop&Anchor=MiddleCenter')
 // url('http://www.edmmagazine.com/wp-content/uploads/2015/06/edc-vegas-day-two-press-2015-billboard-650.jpg')
   // url('http://farm8.staticflickr.com/7336/9406061959_4e967c515a_b.jpg');
 
-  url('http://i1.mirror.co.uk/incoming/article1709852.ece/ALTERNATES/s1200/Tomorrowland%20festival.jpg');
+  // url('http://i1.mirror.co.uk/incoming/article1709852.ece/ALTERNATES/s1200/Tomorrowland%20festival.jpg');
   // url('http://www.tomorrowland.com/global/img/og.jpg');
 
 
