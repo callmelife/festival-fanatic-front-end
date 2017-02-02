@@ -1,74 +1,101 @@
 {{#if isAuthenticated}}
   <form class='enter-info-container' {{action 'save' on='submit'}}>
-    <div class='instructions'>What's the Name?</div>
-    <div class='input-field'> Current Title: {{festival.title}}
-    {{input class='input-area'
-            required='true'
-            placeholder='Enter Festival Name Here...'
-            value=festival.title}}<br>
+    <div class='row-one col-md-6'>
+      <div class='piece-one'>
+        <div class='instructions'>What's the Name?</div>
+        <div class='input-field'> Current Title: {{festival.title}}
+        {{input class='input-area title-input'
+                placeholder='Enter Festival Name Here...'
+                value=festival.title}}
+        </div>
+      </div>
+      <div class='piece-two'>
+        <div class='instructions'>Tell Us About it~~~</div>
+        <div class='input-field'>Current Description: {{festival.description}}
+        {{input class='input-area descr'
+                placeholder='Enter Festival Description Here...'
+                value=festival.description}}
+        </div>
+      </div><br>
     </div>
-    <div class='instructions'>Tell everyone alittle about the festival! Regardless of if its a description from their website, what you think the festival is all about, a word-for-word description from its site - we want to know!</div>
-    <div class='input-field'>Current Description: {{festival.description}}
-    {{input class='input-area'
-            placeholder='Enter Festival Description Here...'
-            value=festival.description}}<br>
+    <div class='row-two col-md-6'>
+      <div class='piece-three'>
+        <div class='instructions'>What Type of music is it? </div>
+        <div class='input-field'>
+        Current  Genre: {{festival.genre}}
+        {{input placeholder='Enter Festival Genre Here...'
+                class='input-area'
+                value=festival.genre}}
+        </div>
+      </div>
+      <div class='piece-four'>
+        <div class='instructions'>Where's the event being held? Festival Fanatic doesn't care if you have specific address or a general area! </div>
+        <div class='input-field'>
+        Current  Location: {{festival.location}}
+        {{input placeholder='An address, city, country, where ever works for us...'
+                class='input-area loc'
+                value=festival.location}}
+        </div>
+      </div><br>
     </div>
-    <div class='instructions'>What Type of music is it? </div>
-    <div class='input-field'>
-    Current  Genre: {{festival.genre}}
-    {{input placeholder='Enter Festival Genre Here...'
-            class='input-area'
-            value=festival.genre}}<br>
-    </div>
-    <div class='instructions'>Where's the event being held? 279 Tremont St, Boston, MA 02116? Some where in the London metro area? Belgium? Festival Fanatic doesn't care if you have specific address or a general area! </div>
-    <div class='input-field'>
-    Current  Location: {{festival.location}}
-    {{input placeholder='Enter Festival Location Here...'
-            class='input-area'
-            value=festival.location}}<br>
-    </div>
-    <div class='instructions'>What's the venue? Your favorite club? A festival out in the desert? A party on the Moon? A rave in your friend's basement? An undisclosed location? Whereever it is, somewhere is hosting. </div>
-    <div class='input-field'>
-    Current Venue: {{festival.venue}}
-    {{input placeholder='Enter Festival Venue Here...'
-            class='input-area'
-            value=festival.venue}}<br>
-    </div>
-    <div class='instructions'>Let's see a picture of what we're working with! Enter a valid image URL below to give your friends an idea of what you've seen! Note: Festival Fanatic only consumes valid URLs (.jpg, .png, .gif).</div>
-    <div class='input-field'>
-    Current Image URL: {{festival.url}}
-    {{input placeholder='Enter Image URL Here...'
-            required='true'
-            class='input-area'
-            value=festival.url
-                              }}<br>
-
-    </div>
-    <div class='instructions'>When was the event? Is it upcoming? Select a day based on when you think it is! </div>
-    <div class='input-field'>
-    Festival Date: {{festival.date}}
-    {{input placeholder='mm/dd/yyyy'
-            type='date'
-            class='input-area'
-            value=festival.date}}<br>
-    </div>
-    <div class='instructions'>How much did this festival set you back in US Dollars? </div>
-    <div class='input-field'>
-    Festival Price: ${{festival.price}}
-    {{input placeholder='Enter price here (Numbers only)...'
-            type='number'
-            class='input-area'
-            value=festival.price}}<br>
-    </div>
-    <div class='instructions'>So, how was it? Let us know what you think of the event! Is the event upcoming? That's OK too! Post about how excited you are to go! Posting about intent to go makes meet-up's much easier! The the more the merrier! </div>
-    <div class='input-field'>
-    Current Comment on Festival: {{festival.comment}}
-    {{input placeholder="Enter A Comment Here..."
-            value=festival.comment
-            class='input-area'}}
-            <br>
-            <button type='submit' class='btn btn-md submit-festival btn-primary'>Save Your Event To The List!</button>
-            <button {{action 'cancel'}} class='btn btn-md cancel-submit-btn btn-danger'>Cancel</button>
+    <div class='row-three col-md-6'>
+      <div class='piece-five'>
+        <div class='instructions'>What's the venue?
+          <ul>
+            <li>Your favorite club?</li>
+            <li>A festival out in the desert?</li>
+            <li>A party on the Moon?</li> <li>A rave in your friend's basement?</li>
+            <li>An undisclosed location?</li>
+          </ul>
+        </div>
+        <div class='input-field'>
+        Current Venue: {{festival.venue}}
+        {{input placeholder='Where ever the event is is, somewhere is hosting...'
+                class='input-area'
+                value=festival.venue}}
+        </div>
+      </div>
+      <div class='piece-six'>
+        <div class='instructions'>Let's see a picture of what we're working with! Enter a valid image URL below to give your friends an idea of what you've seen! </div>
+        <div class='input-field'>
+        Current Image URL: {{festival.url}}
+        {{input placeholder='Enter Image URL Here... (only .jpg, .png, .gif)'
+                class='input-area'
+                value=festival.url}}
+        </div>
+      </div>
+    </div><br>
+    <div class='row-four col-md-6 final-row'>
+      <div class='piece-seven'>
+        <div class='instructions'>Is the event upcoming? Have you already been to it? Maybe the date hasn't been released yet! Festival Fanatic understands that finding a date on events can be a difficult task</div>
+        <div class='input-field'>
+        Festival Date: {{festival.date}}
+        {{input placeholder="'12/31/1999', 'Already happened', 'It's coming up...'"
+                class='input-area'
+                value=festival.date}}
+        </div>
+      </div>
+      <div class='piece-eight'>
+        <div class='instructions'>How much did this festival set you back (financially speaking)? $200? €100? Nothing? Don't remember? That's OK - Being a Festival Fanatic isn't about the money.</div>
+        <div class='input-field'>
+        Festival Price: {{festival.price}}
+        {{input placeholder='Enter Ticket Price Here...'
+                class='input-area'
+                value=festival.price}}
+        </div>
+      </div><br>
+    </div><br>
+    <div class='comments-section'>
+      <div class='instructions last-instr'>So, how was it? Let us know what you think of the event! Is the event upcoming? That's OK too! Post about how excited you are to go! Posting about intent to go makes meet-up's much easier! The the more the merrier! </div>
+      <div class='input-field'>
+      Current Comment on Festival: {{festival.comment}}
+      {{input placeholder="Enter A Comment Here..."
+              value=festival.comment
+              class='input-area comment-input'}}
+              <br>
+              <button type='submit' class='btn btn-md submit-festival btn-primary'>Save Your Event To The List!</button>
+              <button {{action 'cancel'}} class='btn btn-md cancel-submit-btn btn-danger'>Cancel</button>
+      </div>
     </div>
   </form>
 {{else}}
