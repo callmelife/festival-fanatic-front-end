@@ -5,6 +5,7 @@
         <div class='instructions'>What's the Name?</div>
         <div class='input-field'> Current Title: {{festival.title}}
         {{input class='input-area title-input'
+                required='true'
                 placeholder='Enter Festival Name Here...'
                 value=festival.title}}
         </div>
@@ -29,7 +30,7 @@
         </div>
       </div>
       <div class='piece-four'>
-        <div class='instructions'>Where's the event being held? Festival Fanatic doesn't care if you have specific address or a general area! </div>
+        <div class='instructions'>Where's the event being held?</div>
         <div class='input-field'>
         Current  Location: {{festival.location}}
         {{input placeholder='An address, city, country, where ever works for us...'
@@ -60,6 +61,7 @@
         <div class='input-field'>
         Current Image URL: {{festival.url}}
         {{input placeholder='Enter Image URL Here... (only .jpg, .png, .gif)'
+                required='true'
                 class='input-area'
                 value=festival.url}}
         </div>
@@ -70,23 +72,25 @@
         <div class='instructions'>Is the event upcoming? Have you already been to it? Maybe the date hasn't been released yet! Festival Fanatic understands that finding a date on events can be a difficult task</div>
         <div class='input-field'>
         Festival Date: {{festival.date}}
-        {{input placeholder="'12/31/1999', 'Already happened', 'It's coming up...'"
+        {{input placeholder="mm/dd/yyyy"
+                type='date'
                 class='input-area'
                 value=festival.date}}
         </div>
       </div>
       <div class='piece-eight'>
-        <div class='instructions'>How much did this festival set you back (financially speaking)? $200? €100? Nothing? Don't remember? That's OK - Being a Festival Fanatic isn't about the money.</div>
+        <div class='instructions'>How much did this festival set you back in US Dollars?</div>
         <div class='input-field'>
         Festival Price: {{festival.price}}
-        {{input placeholder='Enter Ticket Price Here...'
+        {{input placeholder='Enter price here (Numbers only)...'
+                type='number'
                 class='input-area'
                 value=festival.price}}
         </div>
       </div><br>
     </div><br>
     <div class='comments-section'>
-      <div class='instructions last-instr'>So, how was it? Let us know what you think of the event! Is the event upcoming? That's OK too! Post about how excited you are to go! Posting about intent to go makes meet-up's much easier! The the more the merrier! </div>
+      <div class='instructions last-instr'>So, how was it? Is the event upcoming? Post about how excited you are to go! </div>
       <div class='input-field'>
       Current Comment on Festival: {{festival.comment}}
       {{input placeholder="Enter A Comment Here..."
