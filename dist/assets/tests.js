@@ -117,6 +117,15 @@ define('festival-fanatic/tests/components/festival-list/edit/component.jshint.li
     assert.ok(true, 'components/festival-list/edit/component.js should pass jshint.');
   });
 });
+define('festival-fanatic/tests/components/festival-list/mine/component.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | components/festival-list/mine/component.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'components/festival-list/mine/component.js should pass jshint.\ncomponents/festival-list/mine/component.js: line 10, col 10, Expected \':\' and instead saw \'.\'.\ncomponents/festival-list/mine/component.js: line 10, col 26, Expected \'}\' to match \'{\' from line 3 and instead saw \';\'.\ncomponents/festival-list/mine/component.js: line 11, col 1, Expected \')\' and instead saw \'}\'.\ncomponents/festival-list/mine/component.js: line 11, col 2, Missing semicolon.\ncomponents/festival-list/mine/component.js: line 11, col 2, Expected an identifier and instead saw \')\'.\ncomponents/festival-list/mine/component.js: line 11, col 2, Expected an assignment or function call and instead saw an expression.\ncomponents/festival-list/mine/component.js: line 10, col 11, \'log\' is not defined.\n\n7 errors');
+  });
+});
 define('festival-fanatic/tests/components/festival-list/view/component.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
@@ -124,6 +133,15 @@ define('festival-fanatic/tests/components/festival-list/view/component.jshint.li
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/festival-list/view/component.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/components/festival-list/welcome/component.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | components/festival-list/welcome/component.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'components/festival-list/welcome/component.js should pass jshint.');
   });
 });
 define('festival-fanatic/tests/components/festival-view/component.jshint.lint-test', ['exports'], function (exports) {
@@ -232,6 +250,15 @@ define('festival-fanatic/tests/festival/view/route.jshint.lint-test', ['exports'
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'festival/view/route.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/festivals/mine/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | festivals/mine/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'festivals/mine/route.js should pass jshint.');
   });
 });
 define('festival-fanatic/tests/festivals/new/route.jshint.lint-test', ['exports'], function (exports) {
@@ -529,6 +556,44 @@ define('festival-fanatic/tests/integration/components/festival-list/edit/compone
     assert.ok(true, 'integration/components/festival-list/edit/component-test.js should pass jshint.');
   });
 });
+define('festival-fanatic/tests/integration/components/festival-list/mine/component-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleForComponent)('festival-list/mine', 'Integration | Component | festival list/mine', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+
+    this.render(Ember.HTMLBars.template({
+      'id': 'exqILMJP',
+      'block': '{"statements":[["append",["unknown",["festival-list/mine"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
+
+    assert.equal(this.$().text().trim(), '');
+
+    // Template block usage:
+    this.render(Ember.HTMLBars.template({
+      'id': '2P2z2OBV',
+      'block': '{"statements":[["text","\\n"],["block",["festival-list/mine"],null,null,0],["text","  "]],"locals":[],"named":[],"yields":[],"blocks":[{"statements":[["text","      template block text\\n"]],"locals":[]}],"hasPartials":false}',
+      'meta': {}
+    }));
+
+    assert.equal(this.$().text().trim(), 'template block text');
+  });
+});
+define('festival-fanatic/tests/integration/components/festival-list/mine/component-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | integration/components/festival-list/mine/component-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/components/festival-list/mine/component-test.js should pass jshint.');
+  });
+});
 define('festival-fanatic/tests/integration/components/festival-list/view/component-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
 
   (0, _emberQunit.moduleForComponent)('festival-list/view', 'Integration | Component | festival list/view', {
@@ -565,6 +630,44 @@ define('festival-fanatic/tests/integration/components/festival-list/view/compone
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/components/festival-list/view/component-test.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/integration/components/festival-list/welcome/component-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleForComponent)('festival-list/welcome', 'Integration | Component | festival list/welcome', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+
+    this.render(Ember.HTMLBars.template({
+      'id': '9b9Ihdnx',
+      'block': '{"statements":[["append",["unknown",["festival-list/welcome"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
+
+    assert.equal(this.$().text().trim(), '');
+
+    // Template block usage:
+    this.render(Ember.HTMLBars.template({
+      'id': 'dZCnD8l/',
+      'block': '{"statements":[["text","\\n"],["block",["festival-list/welcome"],null,null,0],["text","  "]],"locals":[],"named":[],"yields":[],"blocks":[{"statements":[["text","      template block text\\n"]],"locals":[]}],"hasPartials":false}',
+      'meta': {}
+    }));
+
+    assert.equal(this.$().text().trim(), 'template block text');
+  });
+});
+define('festival-fanatic/tests/integration/components/festival-list/welcome/component-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | integration/components/festival-list/welcome/component-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/components/festival-list/welcome/component-test.js should pass jshint.');
   });
 });
 define('festival-fanatic/tests/integration/components/festival-view/component-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
@@ -862,6 +965,15 @@ define('festival-fanatic/tests/integration/components/sign-up-form/component-tes
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/components/sign-up-form/component-test.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/mine/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | mine/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'mine/route.js should pass jshint.');
   });
 });
 define('festival-fanatic/tests/resolver.jshint.lint-test', ['exports'], function (exports) {
@@ -1246,6 +1358,27 @@ define('festival-fanatic/tests/unit/festival/view/route-test.jshint.lint-test', 
     assert.ok(true, 'unit/festival/view/route-test.js should pass jshint.');
   });
 });
+define('festival-fanatic/tests/unit/festivals/mine/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:festivals/mine', 'Unit | Route | festivals/mine', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/festivals/mine/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/festivals/mine/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/festivals/mine/route-test.js should pass jshint.');
+  });
+});
 define('festival-fanatic/tests/unit/festivals/new/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
 
   (0, _emberQunit.moduleFor)('route:festivals/new', 'Unit | Route | festivals/new', {
@@ -1339,6 +1472,27 @@ define('festival-fanatic/tests/unit/initializers/text-field-test.jshint.lint-tes
     assert.ok(true, 'unit/initializers/text-field-test.js should pass jshint.');
   });
 });
+define('festival-fanatic/tests/unit/mine/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:mine', 'Unit | Route | mine', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/mine/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/mine/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/mine/route-test.js should pass jshint.');
+  });
+});
 define('festival-fanatic/tests/unit/sign-in/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
 
   (0, _emberQunit.moduleFor)('route:sign-in', 'Unit | Route | sign in', {
@@ -1425,6 +1579,27 @@ define('festival-fanatic/tests/unit/users/route-test.jshint.lint-test', ['export
     assert.ok(true, 'unit/users/route-test.js should pass jshint.');
   });
 });
+define('festival-fanatic/tests/unit/welcome/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:welcome', 'Unit | Route | welcome', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/welcome/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/welcome/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/welcome/route-test.js should pass jshint.');
+  });
+});
 define('festival-fanatic/tests/user/model.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
@@ -1441,6 +1616,15 @@ define('festival-fanatic/tests/users/route.jshint.lint-test', ['exports'], funct
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'users/route.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/welcome/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | welcome/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'welcome/route.js should pass jshint.');
   });
 });
 /* jshint ignore:start */

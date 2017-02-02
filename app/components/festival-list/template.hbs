@@ -3,11 +3,24 @@
   <img src="{{festival.url}}" class="image" alt="Image of Event">
   <div class='brief-descrition-container'>{{festival.description}}</div>
 
-  {{#link-to 'festival' festival}}
-  <button class='btn btn-default btn-success view-festival-btn'>Click Here To View This Festival</button>
-  {{/link-to}}
 
-  {{#if festival.editable}}
-    <button class='btn btn-danger delete-card-btn' {{action 'delete'}}>Delete Festival</button>
-  {{/if}}
+  <div class='btn-and-info'>
+    <div class='btn-container'>
+
+      <div class='col-md-6 festival-location-card-title'>Location of Event:<br>
+        <div class='festival-location-card'>{{festival.location}}</div>
+      </div>
+      <div class='col-md-6 festival-genere-card-title'>Type of Music: <br>
+        <div class='festival-genere-card'>{{festival.genre}}</div>
+      </div>
+
+      {{#link-to 'festival' festival}}
+      <button class='btn view-festival-btn'> View This Festival</button>
+      {{/link-to}}
+
+      {{#if festival.editable}}
+        <button class='btn delete-card-btn' {{action 'delete'}}>Delete This Festival</button>
+      {{/if}}
+    </div>
+  </div>
 </div>

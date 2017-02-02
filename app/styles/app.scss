@@ -1,9 +1,9 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
-@import url('https://fonts.googleapis.com/css?family=Aladin|Eagle+Lake|Hanalei+Fill|Joti+One|Lily+Script+One|Metal+Mania|New+Rocker|Ravi+Prakash|Trade+Winds|UnifrakturCook:700|UnifrakturMaguntia|Arizonia|Kaushan+Script|Merienda+One|Niconne|Norican|Yesteryear');
+@import url('https://fonts.googleapis.com/css?family=Rightous|Eagle+Lake|Hanalei+Fill|Joti+One|Lily+Script+One|Metal+Mania|New+Rocker|Ravi+Prakash|Trade+Winds|UnifrakturCook:700|UnifrakturMaguntia|Arizonia|Kaushan+Script|Merienda+One|Niconne|Norican|Yesteryear|Bangers|Carter+One|Cherry+Cream+Soda|Contrail+One|Kumar+One|Righteous');
 
 
-
+$green: #007207;
 $black: #000;
 $red: #a50d0d;
 $grey: #b7b7b2;
@@ -19,6 +19,7 @@ $sky-blue: #6aebf2;
 $light-grey: #bcbcbc;
 $dark-grey: #595555;
 $dark-orange: #9e4801;
+
 // font-family: 'Trade Winds', cursive;
 // font-family: 'UnifrakturCook', cursive;
 // font-family: 'Joti One', cursive;
@@ -28,11 +29,24 @@ $dark-orange: #9e4801;
 // font-family: 'Hanalei Fill', cursive;
 // font-family: 'Metal Mania', cursive;
 // font-family: 'Lily Script One', cursive;
-// font-family: 'Aladin', cursive;
+// font-family: 'Rightous', cursive;
 // font-family: 'UnifrakturMaguntia', cursive;
 // font-family: 'Norican', cursive;
 // font-family: 'Arizonia', cursive;
 // font-family: 'Yesteryear', cursive;
+
+
+// font-family: 'Kumar One', cursive;
+// font-family: 'Righteous', cursive;
+// font-family: 'Bangers', cursive;
+// font-family: 'Contrail One', cursive;
+// font-family: 'Cherry Cream Soda', cursive;
+// font-family: 'Carter One', cursive;
+
+
+.welcome-page {
+  background-color: $white;
+}
 
 .static-title-div {
   background: linear-gradient(bottom left, $dark-grey, $light-grey);
@@ -46,7 +60,7 @@ $dark-orange: #9e4801;
 }
 
 .navbar-nav {
-  font-family: 'Eagle Lake', cursive;
+  font-family: 'Contrail One', cursive;
   font-size: 20px;
  }
 
@@ -57,14 +71,14 @@ $dark-orange: #9e4801;
 
 
 .navbar-brand {
-  font-family: 'Eagle Lake', cursive;
+  font-family: 'Contrail One', cursive;
 }
 
 .sub-welcome-info {
   background-color: $grey;
   color: $red;
   border-radius: 15px;
-  font-family: 'Aladin', cursive;
+  font-family: 'Contrail One', cursive;
   font-size: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -77,7 +91,7 @@ $dark-orange: #9e4801;
   background-color: $grey;
   color: $red;
   border-radius: 15px;
-  font-family: 'Aladin', cursive;
+  font-family: 'Contrail One', cursive;
   font-size: 50px;
   margin-bottom: 25px;
   padding-left: 20px;
@@ -94,7 +108,7 @@ $dark-orange: #9e4801;
   // background-color: $grey;
   border-radius: 15px;
   color: $red;
-  font-family: 'Aladin', cursive;
+  font-family: 'Contrail One', cursive;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
@@ -108,7 +122,7 @@ $dark-orange: #9e4801;
   // background-color: $grey;
   border-radius: 15px;
   color: $red;
-  font-family: 'Aladin', cursive;
+  font-family: 'Contrail One', cursive;
   margin-bottom: 30px;
   padding-bottom: 30px;
   padding-left: 20px;
@@ -119,11 +133,11 @@ $dark-orange: #9e4801;
 
 .brief-descrition-container {
   // background-color:
-  border: 1px $black solid;
-  border-radius: 15px;
+  border-bottom: 1px $black dashed;
+  border-top: 1px $black dashed;
   display: block;
-  font-family: 'Aladin', cursive;
-  font-size: 25px;
+  font-family: 'Carter One', cursive;
+  font-size: 20px;
   height: 260px;
   margin-left: 65%;
   padding-left: 3px;
@@ -158,7 +172,7 @@ $dark-orange: #9e4801;
 }
 
 .instructions {
-  font-family: 'Aladin', cursive;
+  font-family: 'Contrail One', cursive;
   font-size: 25px;
   padding-left: 10px;
   padding-right: 10px;
@@ -195,22 +209,28 @@ $dark-orange: #9e4801;
   background-color: $white;
   border-radius: 15px;
   color: $red;
-  font-family: 'Trade Winds', cursive;
-  font-size: 60px;
-  margin-bottom: 20px;
-  margin-left: 30%;
+  font-family: 'Bangers', cursive;
+  font-size: 100px;
+  letter-spacing: 5px;
+  margin: 0 auto;
+
+  // margin-bottom: 20px;
+  // margin-top: 60px;
+  // margin-left: 30%;
   text-align: center;
-  width: 40%;
-}
+  width: 55%;
+    }
+
+
 
 .festival-title {
   color: $white;
-  font-family: 'Metal Mania';
+  font-family: 'Kumar One', cursive;
   font-size: 40px;
   font-style: italic;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
   // margin-left: 46%;
-  margin-top: 3%;
+  margin-top: 7%;
   text-align: center;
   // padding-left: 45%;
 }
@@ -335,18 +355,108 @@ $dark-orange: #9e4801;
   width: 90%;
 }
 
+
+
+.btn-container {
+  background-color: $white;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  padding-top: 20px;
+  width: auto;
+}
+
+.festival-location-card-title {
+  background-color: $light-grey;
+  border-radius: 15px;
+  color: $black;
+  font-family: 'Carter One', cursive;
+  font-size: 15px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-top: 10px;
+  padding: 10px 10px 10px 10px;
+  width: 80%;
+}
+
+.festival-genere-card-title {
+  background-color: $light-grey;
+  border-radius: 15px;
+  color: $black;
+  font-family: 'Carter One', cursive;
+  font-size: 15px;
+  height: auto;
+  margin-left: 10%;
+  padding: 10px 10px 10px 10px;
+  width: 80%;
+}
+
+.festival-location-card, .festival-genere-card {
+  background-color: $white;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  overflow: scroll;
+  overflow-y: scroll;
+}
+
+// font-family: 'Kumar One', cursive; - like it
+// font-family: 'Righteous', cursive; - a bit boring / nerdy
+// font-family: 'Bangers', cursive; - good but narrow
+// font-family: 'Contrail One', cursive; - goot but boring, less than other one
+// font-family: 'Cherry Cream Soda', cursive;
+// font-family: 'Carter One', cursive;
+
 .view-festival-btn {
-  font-family: 'Eagle Lake', cursive;
+  background-color: $dark-blue;
+  background-repeat: no-repeat;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  font-family: 'Contrail One', cursive;
+  font-size: 15px;
+  letter-spacing: 1px;
   margin-bottom: 30px;
   margin-left: 35%;
-  margin-top: 25px;
+  margin-top: 30px;
+  outline: none;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.view-festival-btn:hover {
+  background-color: $green;
+  color: $white;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 
 .delete-card-btn {
-  font-family: 'Eagle Lake', cursive;
+  background-color: $red;
+  color: $white;
+  font-family: 'Contrail One', cursive;
+  letter-spacing: 1px;
   margin-bottom: 20px;
   margin-left: 45%;
-  margin-top: 15px;
+  outline: none;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.delete-card-btn:hover {
+  background-color: $white;
+  border: 1px solid $red;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 
 .post-comment-btn {
@@ -355,7 +465,7 @@ $dark-orange: #9e4801;
 }
 
 .edit-festival-btn {
-  font-family: 'Eagle Lake', cursive;
+  font-family: 'Contrail One', cursive;
   margin-left: 40%;
   margin-top: 50px;
 }
@@ -379,7 +489,7 @@ $dark-orange: #9e4801;
 }
 
 .post-festival-btn {
-  font-family: 'Eagle Lake', cursive;
+  font-family: 'Contrail One', cursive;
   margin-bottom: 20px;
   margin-left: 40%;
   margin-top: 20px;
@@ -387,12 +497,16 @@ $dark-orange: #9e4801;
 
 .main-background {
  background-image: url('http://www.kathykwylie.com/wp-content/uploads/2012/01/Miles-to-Go-Quilting.jpg');
+
+ // background-image: url('http://il9.picdn.net/shutterstock/videos/9242954/thumb/1.jpg');
+  background-color: $white;
   border: 10px $white ridge;
   border-radius: 20px;
+  height: 100%;
   margin-bottom: 50px;
   margin-top: 20px;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 60px;
   width: 100%;
 }
 
@@ -410,21 +524,31 @@ $dark-orange: #9e4801;
   text-align: center;
 }
 
+.view-all-festivals-title {
+  color: $red;
+  font-size: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  width: auto;
+}
+
 .festival-owner-div {
   background: $grey;
   border: 3px $white solid;
   border-radius: 15px;
-  font-family: 'Aladin', cursive;
+  font-family: 'Contrail One', cursive;
   margin-bottom: 20px;
   margin-left: 20px;
-  margin-top: 30px;
   margin-right: 20px;
+  margin-top: 30px;
 }
 
 .image {
   background-color: $grey;
-
-  border: 3px $white solid;
   border-radius: 20px;
   float: left;
   height: 260px;
@@ -439,17 +563,214 @@ $dark-orange: #9e4801;
   border-radius: 5px;
   border-style: dashed;
   display: inline-flex;
-  height: 260px;
+  height: auto;
   margin-left: 40px;
   margin-top: 35px;
   width: 450px;
 }
 
+.view-all-festivals-div {
+  background-color: $white;
+  border: 3px solid $red;
+  border-radius: 5px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
+.create-new-div {
+  background-color: $white;
+  border: 3px solid $red;
+  border-radius: 5px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.view-users-div {
+  background-color: $white;
+  border: 3px solid $red;
+  border-radius: 5px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.view-users-title {
+  color: $red;
+  font-size: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  width: auto;
+}
+
+.create-festivals-title {
+  color: $red;
+  font-size: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  width: auto;
+}
+
+.create-festival-img-container {
+  background-color: $black;
+  border: 1px solid $red;
+  height: 160px;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 40%;
+}
+
+.festivals-img-container {
+  background-color: $black;
+  border: 1px solid $red;
+  height: 160px;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 40%;
+}
+
+.view-users-img-container {
+  background-color: $black;
+  border: 1px solid $red;
+  height: 160px;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 40%;
+}
+
+.view-festivals-btn {
+  margin-bottom: 5%;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+.view-create-festival-btn {
+  margin-bottom: 5%;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+.view-users-btn {
+  margin-bottom: 5%;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+
+.features-text {
+  background-color: $red;
+  border: 1px solid $white;
+  border-radius: 20px;
+  color: $white;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.welcome-page-title {
+  color: $red;
+  font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.welcome-page-view {
+  background-color: $grey;
+  border: 1px solid $black;
+  // border-radius: 20px;
+  height: 100%;
+  // padding-left: 20px;
+}
+
+// .next-step-btn {
+//   background-color: $white;
+//   border: 3px solid $dark-grey;
+//   color: $red;
+//   margin-left: 25%;
+// }
+
+.next-step-btn {
+  background-color: $dark-blue;
+  background-repeat: no-repeat;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  margin-left: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  overflow: hidden;
+}
+
+.next-step-btn:hover {
+  // background-color: Transparent;
+  background-color: $green;
+  color: $gold;
+  // border: 1px $black solid;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+
+.features-step-btn {
+  background-color: $dark-blue;
+  background-repeat: no-repeat;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  margin-left: 10%;
+  padding-top: 10px;
+
+  padding-bottom: 10px;
+  outline: none;
+  overflow: hidden;
+}
+
+.features-step-btn:hover {
+  // background-color: Transparent;
+  background-color: $green;
+  color: $gold;
+  // border: 1px $black solid;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+.next-steps {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.test-title {
+  background-color: $red;
+  height: 400px;
+  width: 100%;
+}
 
 .background-container {
   background-image:
-  url('http://st2.depositphotos.com/2420203/8239/v/450/depositphotos_82393252-stock-illustration-seamless-abstract-interlocking-geometric-background.jpg');
+  url('https://s-media-cache-ak0.pinimg.com/originals/e6/bd/a2/e6bda29991dbb0702fabc85df2da791c.png');
+  background-size: 100%;
+
 
   // url('http://www.travelweekly.com/uploadedImages/All_TW_Art/2016/053016/T0530ELECTRICDAISYCARNIVAL_C_HR.jpg?n=8098&width=1540&height=866&mode=crop&Anchor=MiddleCenter')
 // url('http://www.edmmagazine.com/wp-content/uploads/2015/06/edc-vegas-day-two-press-2015-billboard-650.jpg')
