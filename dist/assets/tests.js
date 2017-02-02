@@ -123,7 +123,7 @@ define('festival-fanatic/tests/components/festival-list/mine/component.jshint.li
   QUnit.module('JSHint | components/festival-list/mine/component.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'components/festival-list/mine/component.js should pass jshint.\ncomponents/festival-list/mine/component.js: line 10, col 10, Expected \':\' and instead saw \'.\'.\ncomponents/festival-list/mine/component.js: line 10, col 26, Expected \'}\' to match \'{\' from line 3 and instead saw \';\'.\ncomponents/festival-list/mine/component.js: line 11, col 1, Expected \')\' and instead saw \'}\'.\ncomponents/festival-list/mine/component.js: line 11, col 2, Missing semicolon.\ncomponents/festival-list/mine/component.js: line 11, col 2, Expected an identifier and instead saw \')\'.\ncomponents/festival-list/mine/component.js: line 11, col 2, Expected an assignment or function call and instead saw an expression.\ncomponents/festival-list/mine/component.js: line 10, col 11, \'log\' is not defined.\n\n7 errors');
+    assert.ok(true, 'components/festival-list/mine/component.js should pass jshint.');
   });
 });
 define('festival-fanatic/tests/components/festival-list/view/component.jshint.lint-test', ['exports'], function (exports) {

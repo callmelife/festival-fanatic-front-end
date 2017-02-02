@@ -248,8 +248,8 @@ $dark-orange: #9e4801;
 }
 
 .festival-info-container {
-  background-color: $orange;
-  border: 10px $dark-orange outset;
+  background-color: $white;
+  border: 10px $orange outset;
   border-radius: 15px;
   color: $black;
   height: auto;
@@ -259,106 +259,126 @@ $dark-orange: #9e4801;
   padding-top: 20px;
   width: 90%;
 }
+//
+// .info-container-location {
+//   background-color: $grey;
+//   border: 1px $black solid;
+//   border-radius: 5px;
+//   color: $black;
+//   display: inline-block;
+//   height: auto;
+//   margin-bottom: 5px;
+//   margin-left: 10%;
+//   margin-right: 15px;
+//   padding-bottom: 3px;
+//   padding-left: 5px;
+//   padding-right: 5px;
+//   padding-top: 3px;
+//   width: auto;
+// }
+//
+// .info-container-venue {
+//   background-color: $grey;
+//   border: 1px $black solid;
+//   border-radius: 5px;
+//   color: $black;
+//   display: inline-block;
+//   height: auto;
+//   margin-bottom: 5px;
+//   margin-left: 15%;
+//   margin-right: 15px;
+//   padding-bottom: 3px;
+//   padding-left: 5px;
+//   padding-right: 5px;
+//   padding-top: 3px;
+//   width: auto;
+// }
+//
+// .info-container-genre {
+//   background-color: $grey;
+//   border: 1px $black solid;
+//   border-radius: 5px;
+//   display: inline-block;
+//   height: auto;
+//   margin-bottom: 5px;
+//   margin-left: 15%;
+//   padding-bottom: 3px;
+//   padding-left: 5px;
+//   padding-right: 5px;
+//   padding-top: 3px;
+//   width: auto;
+// }
+//
+// .info-container-price {
+//   background-color: $grey;
+//   border: 1px $black solid;
+//   border-radius: 5px;
+//   display: inline-block;
+//   height: auto;
+//   margin-bottom: 5px;
+//   margin-left: 25%;
+//   margin-top: 20px;
+//   padding-bottom: 3px;
+//   padding-left: 5px;
+//   padding-right: 5px;
+//   padding-top: 3px;
+//   width: auto;
+// }
+//
+// .info-container-date {
+//   background-color: $grey;
+//   border: 1px $black solid;
+//   border-radius: 5px;
+//   display: inline-block;
+//   height: auto;
+//   margin-bottom: 5px;
+//   margin-left: 25%;
+//   padding-bottom: 3px;
+//   padding-left: 5px;
+//   padding-right: 5px;
+//   padding-top: 3px;
+//   width: auto;
+// }
 
-.info-container-location {
+.info-container {
   background-color: $grey;
-  border: 1px $black solid;
-  border-radius: 5px;
-  color: $black;
-  display: inline-block;
-  height: auto;
-  margin-bottom: 5px;
-  margin-left: 10%;
-  margin-right: 15px;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 3px;
-  width: auto;
+  border-radius: 15px;
+  font-family: 'Carter One', cursive;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  width: 60%;
 }
 
-.info-container-venue {
-  background-color: $grey;
-  border: 1px $black solid;
-  border-radius: 5px;
-  color: $black;
-  display: inline-block;
+.actual-info {
+  background-color: $white;
+  border-radius: 15px;
+  font-family: 'Contrail One', cursive;
   height: auto;
-  margin-bottom: 5px;
-  margin-left: 15%;
-  margin-right: 15px;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 3px;
-  width: auto;
-}
-
-.info-container-genre {
-  background-color: $grey;
-  border: 1px $black solid;
-  border-radius: 5px;
-  display: inline-block;
-  height: auto;
-  margin-bottom: 5px;
-  margin-left: 15%;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 3px;
-  width: auto;
-}
-
-.info-container-price {
-  background-color: $grey;
-  border: 1px $black solid;
-  border-radius: 5px;
-  display: inline-block;
-  height: auto;
-  margin-bottom: 5px;
-  margin-left: 25%;
-  margin-top: 20px;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 3px;
-  width: auto;
-}
-
-.info-container-date {
-  background-color: $grey;
-  border: 1px $black solid;
-  border-radius: 5px;
-  display: inline-block;
-  height: auto;
-  margin-bottom: 5px;
-  margin-left: 25%;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 3px;
-  width: auto;
-}
-
-.info-container-comment {
-  background-color: $grey;
-  border: 1px $black solid;
-  border-radius: 5px;
-  height: 80px;
-  margin-bottom: 20px;
   margin-left: 5%;
-  margin-top: 25px;
-  overflow: scroll;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-top: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   width: 90%;
 }
+.info-container-comments {
+  height: auto;
+  margin-bottom: 20px;
+  overflow: scroll;
+}
 
+
+.actual-info-comment {
+  height: auto;
+  // padding-bottom: 20px;
+}
 
 
 .btn-container {
   background-color: $white;
+  border: 10px $orange outset;
   border-radius: 10px;
   margin-bottom: 5%;
   margin-left: 5%;
@@ -422,7 +442,7 @@ $dark-orange: #9e4801;
   font-size: 15px;
   letter-spacing: 1px;
   margin-bottom: 30px;
-  margin-left: 35%;
+  margin-left: 40.5%;
   margin-top: 30px;
   outline: none;
   overflow: hidden;
@@ -438,13 +458,55 @@ $dark-orange: #9e4801;
   overflow: hidden;
 }
 
+.edit-festival-btn {
+  background-color: $green;
+  background-repeat: no-repeat;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  font-family: 'Contrail One', cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-left: 35%;
+  margin-top: 50px;
+}
+
+.back-btn {
+  background-color: $orange;
+  background-repeat: no-repeat;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  font-family: 'Contrail One', cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-left: 45%;
+  margin-top: 50px;
+}
+
+.back-btn:hover {
+  background-color: $white;
+  color: $orange;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+.edit-festival-btn:hover {
+  background-color: $white;
+  color: $green;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
 .delete-card-btn {
   background-color: $red;
   color: $white;
   font-family: 'Contrail One', cursive;
   letter-spacing: 1px;
   margin-bottom: 20px;
-  margin-left: 45%;
+  margin-left: 40%;
   outline: none;
   overflow: hidden;
   padding-bottom: 10px;
@@ -464,11 +526,7 @@ $dark-orange: #9e4801;
   margin-top: 10px;
 }
 
-.edit-festival-btn {
-  font-family: 'Contrail One', cursive;
-  margin-left: 40%;
-  margin-top: 50px;
-}
+
 
 .comment-input-box {
   height: 80px;
@@ -744,6 +802,8 @@ $dark-orange: #9e4801;
   outline: none;
   overflow: hidden;
 }
+
+
 
 .features-step-btn:hover {
   // background-color: Transparent;

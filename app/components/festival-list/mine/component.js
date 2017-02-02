@@ -6,6 +6,5 @@ export default Ember.Component.extend({
   isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
   model () {
     return this.get('store').findAll('festival');
-  },
-  console.log('festival');
+  }
 });

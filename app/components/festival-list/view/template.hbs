@@ -4,23 +4,44 @@
   <img src="{{festival.url}}" class="image" alt="Image of Event">
   <div class='brief-descrition-container'>{{festival.description}}</div>
   <div class='festival-info-container'>
-    <div class='info-container-location'><strong>Location:</strong> {{festival.location}}</div>
-    <div class='info-container-venue'><strong>Venue:</strong> {{festival.venue}}</div>
-    <div class='info-container-genre'><strong>Genre:</strong> {{festival.genre}}</div><br>
-    <div class='info-container-price'><strong>Ticket Price: $</strong> {{festival.price}}</div>
-    <div class='info-container-date'><strong>Date:</strong> {{festival.date}}</div>
-    <div class='info-container-comment'><strong>Comment:</strong> {{festival.comment}}</div>
+    <div class='info-container'>
+      <strong>Location:</strong>
+        <div class='actual-info'>{{festival.location}}</div>
+    </div>
+    <div class='info-container'>
+      <strong>Venue:</strong>
+        <div class='actual-info'>{{festival.venue}}</div>
+    </div>
+    <div class='info-container'>
+      <strong>Genre:</strong>
+        <div class='actual-info'>{{festival.genre}}</div>
+    </div>
+    <div class='info-container'>
+      <strong>Ticket Price: $</strong>
+        <div class='actual-info'>{{festival.price}}</div>
+    </div>
+    <div class='info-container'>
+      <strong>Date:</strong>
+        <div class='actual-info'>{{festival.date}}</div>
+      </div>
+    <div class='info-container info-container-comments'><strong>
+      Comment:</strong><div class='actual-info actual-info-comment'>{{festival.comment}}</div></div>
   </div>
 
 {{#if festival.editable}}
   {{#link-to 'festival/edit' festival}}
-    <button class='btn btn-primary edit-festival-btn'>Edit This Festival's information</button>
+    <button class='btn edit-festival-btn'>Edit This Festival's information</button>
   {{/link-to}}
 {{/if}}
 
 {{!-- {{#if festival.editable}}
     <button class='btn btn-danger delete-card-btn' {{action 'delete'}}>Delete Festival</button>
 {{/if}} --}}
+
+  {{#link-to 'festivals'}}
+    <button class='btn back-btn'>Go Back</button>
+  {{/link-to}}
+
 
 <div class='festival-owner-div'>
   <div class='festival-owner'>This Festival was added by: {{user}} <br> Connect with them and see if they want to meet up!</div>
