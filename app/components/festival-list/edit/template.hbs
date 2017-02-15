@@ -41,13 +41,7 @@
     </div>
     <div class='row-three col-md-6'>
       <div class='piece-five'>
-        <div class='instructions'>What's the venue?
-          <ul>
-            <li>Your favorite club?</li>
-            <li>A festival out in the desert?</li>
-            <li>A party on the Moon?</li> <li>A rave in your friend's basement?</li>
-            <li>An undisclosed location?</li>
-          </ul>
+        <div class='instructions'>Who's hosting?
         </div>
         <div class='input-field'>
         Current Venue: {{festival.venue}}
@@ -57,7 +51,7 @@
         </div>
       </div>
       <div class='piece-six'>
-        <div class='instructions'>Let's see a picture of what we're working with! Enter a valid image URL below to give your friends an idea of what you've seen! </div>
+        <div class='instructions'>Enter a Picture (URL) Below! </div>
         <div class='input-field'>
         Current Image URL: {{festival.url}}
         {{input placeholder='Enter Image URL Here... (only .jpg, .png, .gif)'
@@ -69,7 +63,7 @@
     </div><br>
     <div class='row-four col-md-6 final-row'>
       <div class='piece-seven'>
-        <div class='instructions'>Is the event upcoming? Have you already been to it? Maybe the date hasn't been released yet! Festival Fanatic understands that finding a date on events can be a difficult task</div>
+        <div class='instructions'>When is / was the event?</div>
         <div class='input-field'>
         Festival Date: {{festival.date}}
         {{input placeholder="mm/dd/yyyy"
@@ -81,7 +75,7 @@
       <div class='piece-eight'>
         <div class='instructions'>How much did this festival set you back in US Dollars?</div>
         <div class='input-field'>
-        Festival Price: {{festival.price}}
+        Festival Price: ${{festival.price}}
         {{input placeholder='Enter price here (Numbers only)...'
                 type='number'
                 class='input-area'
@@ -89,16 +83,18 @@
         </div>
       </div><br>
     </div><br>
-    <div class='comments-section'>
-      <div class='instructions last-instr'>So, how was it? Is the event upcoming? Post about how excited you are to go! </div>
-      <div class='input-field'>
-      Current Comment on Festival: {{festival.comment}}
-      {{input placeholder="Enter A Comment Here..."
-              value=festival.comment
-              class='input-area comment-input'}}
-              <br>
-              <button type='submit' class='btn btn-md submit-festival btn-primary'>Save Your Event To The List!</button>
-              <button {{action 'cancel'}} class='btn btn-md cancel-submit-btn btn-danger'>Cancel</button>
+    <div class='piece-nine'>
+      <div class='comments-section'>
+        <div class='instructions last-instr'>So, how was it? Is the event upcoming? Post about how excited you are to go! </div>
+        <div class='input-field'>
+        Current Comment on Festival: {{festival.comment}}
+        {{input placeholder="Enter A Comment Here..."
+                value=festival.comment
+                class='input-area comment-input'}}
+                <br>
+                <button type='submit' class='btn btn-md submit-festival btn-primary'>Save Your Event To The List!</button>
+                <button {{action 'cancel'}} class='btn btn-md cancel-submit-btn btn-danger'>Cancel</button>
+        </div>
       </div>
     </div>
   </form>

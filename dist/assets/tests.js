@@ -117,6 +117,15 @@ define('festival-fanatic/tests/components/festival-list/edit/component.jshint.li
     assert.ok(true, 'components/festival-list/edit/component.js should pass jshint.');
   });
 });
+define('festival-fanatic/tests/components/festival-list/genre/component.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | components/festival-list/genre/component.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'components/festival-list/genre/component.js should pass jshint.');
+  });
+});
 define('festival-fanatic/tests/components/festival-list/mine/component.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
@@ -222,7 +231,7 @@ define('festival-fanatic/tests/festival/edit/route.jshint.lint-test', ['exports'
   QUnit.module('JSHint | festival/edit/route.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'festival/edit/route.js should pass jshint.');
+    assert.ok(false, 'festival/edit/route.js should pass jshint.\nfestival/edit/route.js: line 11, col 33, \'jpg\' is not defined.\nfestival/edit/route.js: line 13, col 38, \'png\' is not defined.\nfestival/edit/route.js: line 15, col 38, \'gif\' is not defined.\n\n3 errors');
   });
 });
 define('festival-fanatic/tests/festival/model.jshint.lint-test', ['exports'], function (exports) {
@@ -250,6 +259,15 @@ define('festival-fanatic/tests/festival/view/route.jshint.lint-test', ['exports'
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'festival/view/route.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/festivals/genre/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | festivals/genre/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'festivals/genre/route.js should pass jshint.');
   });
 });
 define('festival-fanatic/tests/festivals/mine/route.jshint.lint-test', ['exports'], function (exports) {
@@ -286,6 +304,69 @@ define('festival-fanatic/tests/festivals/view/route.jshint.lint-test', ['exports
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'festivals/view/route.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/genre/classic/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | genre/classic/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'genre/classic/route.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/genre/country/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | genre/country/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'genre/country/route.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/genre/edm/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | genre/edm/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'genre/edm/route.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/genre/jazz/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | genre/jazz/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'genre/jazz/route.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/genre/rap/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | genre/rap/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'genre/rap/route.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/genre/rock/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | genre/rock/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'genre/rock/route.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/genre/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | genre/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'genre/route.js should pass jshint.');
   });
 });
 define('festival-fanatic/tests/helpers/destroy-app', ['exports', 'ember'], function (exports, _ember) {
@@ -554,6 +635,44 @@ define('festival-fanatic/tests/integration/components/festival-list/edit/compone
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/components/festival-list/edit/component-test.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/integration/components/festival-list/genre/component-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleForComponent)('festival-list/genre', 'Integration | Component | festival list/genre', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+
+    this.render(Ember.HTMLBars.template({
+      'id': 'VM6JKqb/',
+      'block': '{"statements":[["append",["unknown",["festival-list/genre"]],false]],"locals":[],"named":[],"yields":[],"blocks":[],"hasPartials":false}',
+      'meta': {}
+    }));
+
+    assert.equal(this.$().text().trim(), '');
+
+    // Template block usage:
+    this.render(Ember.HTMLBars.template({
+      'id': 'meOV5kRM',
+      'block': '{"statements":[["text","\\n"],["block",["festival-list/genre"],null,null,0],["text","  "]],"locals":[],"named":[],"yields":[],"blocks":[{"statements":[["text","      template block text\\n"]],"locals":[]}],"hasPartials":false}',
+      'meta': {}
+    }));
+
+    assert.equal(this.$().text().trim(), 'template block text');
+  });
+});
+define('festival-fanatic/tests/integration/components/festival-list/genre/component-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | integration/components/festival-list/genre/component-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/components/festival-list/genre/component-test.js should pass jshint.');
   });
 });
 define('festival-fanatic/tests/integration/components/festival-list/mine/component-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
@@ -1358,6 +1477,27 @@ define('festival-fanatic/tests/unit/festival/view/route-test.jshint.lint-test', 
     assert.ok(true, 'unit/festival/view/route-test.js should pass jshint.');
   });
 });
+define('festival-fanatic/tests/unit/festivals/genre/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:festivals/genre', 'Unit | Route | festivals/genre', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/festivals/genre/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/festivals/genre/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/festivals/genre/route-test.js should pass jshint.');
+  });
+});
 define('festival-fanatic/tests/unit/festivals/mine/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
 
   (0, _emberQunit.moduleFor)('route:festivals/mine', 'Unit | Route | festivals/mine', {
@@ -1440,6 +1580,153 @@ define('festival-fanatic/tests/unit/festivals/view/route-test.jshint.lint-test',
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/festivals/view/route-test.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/unit/genre/classic/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:genre/classic', 'Unit | Route | genre/classic', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/genre/classic/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/genre/classic/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/genre/classic/route-test.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/unit/genre/country/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:genre/country', 'Unit | Route | genre/country', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/genre/country/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/genre/country/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/genre/country/route-test.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/unit/genre/edm/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:genre/edm', 'Unit | Route | genre/edm', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/genre/edm/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/genre/edm/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/genre/edm/route-test.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/unit/genre/jazz/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:genre/jazz', 'Unit | Route | genre/jazz', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/genre/jazz/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/genre/jazz/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/genre/jazz/route-test.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/unit/genre/rap/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:genre/rap', 'Unit | Route | genre/rap', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/genre/rap/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/genre/rap/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/genre/rap/route-test.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/unit/genre/rock/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:genre/rock', 'Unit | Route | genre/rock', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/genre/rock/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/genre/rock/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/genre/rock/route-test.js should pass jshint.');
+  });
+});
+define('festival-fanatic/tests/unit/genre/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:genre', 'Unit | Route | genre', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('festival-fanatic/tests/unit/genre/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/genre/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/genre/route-test.js should pass jshint.');
   });
 });
 define('festival-fanatic/tests/unit/initializers/text-field-test', ['exports', 'ember', 'festival-fanatic/initializers/text-field', 'qunit'], function (exports, _ember, _festivalFanaticInitializersTextField, _qunit) {

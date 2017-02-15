@@ -6,9 +6,7 @@ export default Ember.Route.extend({
   },
   actions: {
     createFestival (festival) {
-      let jpg = "jpg";
-      let png = "png";
-      let gif = "gif";
+
       let extensionString = festival.get('url').split('.').pop();
         if (extensionString === jpg) {
         }

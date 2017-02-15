@@ -6181,6 +6181,19 @@ button.close {
   border-color: gainsboro;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
+.genre-display {
+  background-color: #fff;
+  text-align: center;
+  width: auto; }
+
+.genre-selector {
+  background-color: #101ff2; }
+
+.auth-init {
+  background-color: #a50d0d;
+  height: 200px;
+  width: 100%; }
+
 .welcome-page {
   background-color: #fff; }
 
@@ -6287,9 +6300,11 @@ button.close {
   width: 39%; }
 
 .cancel-submit-btn {
+  font-size: 20px;
   margin-left: 30%; }
 
 .submit-festival {
+  font-size: 20px;
   margin-left: 20%; }
 
 .instructions {
@@ -6300,6 +6315,9 @@ button.close {
   padding-top: 10px;
   text-align: center; }
 
+.piece-two, .piece-four, .piece-six, .piece-eight {
+  margin-top: 20px; }
+
 .input-area {
   background-color: #a50d0d;
   border-radius: 5px;
@@ -6308,7 +6326,8 @@ button.close {
   margin-top: 5px; }
 
 .input-field {
-  font-family: 'Trade Winds', cursive;
+  font-family: 'Contrail One', cursive;
+  font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 3px; }
@@ -6318,6 +6337,16 @@ button.close {
   border-radius: 10px;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  width: 100%; }
+
+.piece-one,
+.piece-two,
+.piece-three,
+.piece-four,
+.piece-five,
+.piece-six,
+.piece-seven,
+.piece-eight {
   width: 100%; }
 
 .static-title {
@@ -6330,6 +6359,17 @@ button.close {
   margin: 0 auto;
   text-align: center;
   width: 55%; }
+
+.loc {
+  padding-bottom: 100px;
+  overflow: visible; }
+
+.title-input {
+  margin-bottom: 15px; }
+
+.descr {
+  padding-bottom: 50px;
+  overflow: scroll; }
 
 .festival-title {
   color: #fff;
@@ -6436,6 +6476,19 @@ button.close {
   padding-bottom: 0px;
   overflow: scroll;
   overflow-y: scroll; }
+
+.row-one,
+.row-two,
+.row-three,
+.row-four {
+  background-color: #fff;
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 40%; }
 
 .view-festival-btn {
   background-color: #02074c;
@@ -6750,6 +6803,54 @@ button.close {
   outline: none;
   overflow: hidden; }
 
+.classic-background {
+  background-image: url("http://www.semensemble.org/files/resized/136006/cropped/1170;658;09e801b59b25e2334509b184f2d3ce2fb7040b3f.jpg");
+  background-size: cover;
+  height: 700px;
+  margin-bottom: 20px;
+  margin-left: -16.5%;
+  width: 1200px; }
+
+.jazz-background {
+  background-image: url("http://www.normans.co.uk/blog/wp-content/uploads/2015/10/wallpaper-boy-woth-sax.jpg");
+  background-size: cover;
+  height: 700px;
+  margin-bottom: 20px;
+  margin-left: -16.5%;
+  width: 1200px; }
+
+.edm-background {
+  background-image: url("http://www.travelweekly.com/uploadedImages/All_TW_Art/2016/053016/T0530ELECTRICDAISYCARNIVAL_C_HR.jpg?n=8098&width=1540&height=866&mode=crop&Anchor=MiddleCenter");
+  background-size: cover;
+  height: 700px;
+  margin-bottom: 20px;
+  margin-left: -16.5%;
+  width: 1200px; }
+
+.country-background {
+  background-image: url("http://images1.laweekly.com/imager/u/745xauto/6856741/music1-1_4-28-16-e71c42ff11d23031.jpg");
+  background-size: cover;
+  height: 700px;
+  margin-bottom: 20px;
+  margin-left: -16.5%;
+  width: 1200px; }
+
+.rap-background {
+  background-image: url("https://cdn0.vox-cdn.com/thumbor/q7ez2yCZkyDPHVL_1dX7_t82wF0=/0x0:964x643/1310x873/cdn0.vox-cdn.com/uploads/chorus_image/image/50056277/jay-z.0.png");
+  background-size: cover;
+  height: 700px;
+  margin-bottom: 20px;
+  margin-left: -16.5%;
+  width: 1200px; }
+
+.rock-background {
+  background-image: url("http://www.siwallpaperhd.com/wp-content/uploads/2015/09/rock_music_festival_wallpaper.jpg");
+  background-size: cover;
+  height: 700px;
+  margin-bottom: 20px;
+  margin-left: -16.5%;
+  width: 1200px; }
+
 .features-step-btn:hover {
   background-color: #007207;
   color: #edc525;
@@ -6767,5 +6868,5 @@ button.close {
   width: 100%; }
 
 .background-container {
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/e6/bd/a2/e6bda29991dbb0702fabc85df2da791c.png");
+  background-color: #b7b7b2;
   background-size: 100%; }
