@@ -925,7 +925,58 @@ width: 100%;
   width: 1200px;
 }
 
+.modals-title {
+  background-color: $white;
+  border-radius: 20px;
+  color: $black;
+  text-align: center;
+}
 
+.genre-template {
+  padding-top: 50px;
+}
+
+.modal-filler-text {
+  background-color: $red;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.past-modal {
+  background-color: $red;
+  display: block;
+  margin: 0 auto;
+}
+
+.future-modal {
+  background-color: $red;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-container {
+  background-color: $grey;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.modal-btns {
+  background-color: $blue;
+  border-radius: 20px;
+  height: 85%;
+  margin-left: 25%;
+  // margin-top: 50px;
+  // padding-top: 50px;
+  width: 50%;
+
+}
+
+// .modal-bnts:after {
+//   opacity: .8;
+// }
 
 .features-step-btn:hover {
   // background-color: Transparent;

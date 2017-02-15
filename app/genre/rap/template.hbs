@@ -1,2 +1,204 @@
 <div class='genre-template rap-background'>
+  <div class='modal-btns'>
+    <h1 class='modals-title'>Let's Get Started with the Basics:</h1>
+      <a><button class='past-modal'data-toggle='modal' data-target='#past-modal'>I Went To This</button></a>
+      <a><button class='future-modal'data-toggle='modal' data-target='#future-modal'>I'm Going To This</button></a>
+      {{#link-to 'genre'}}
+        <button class='btn'>Go Back</button>
+      {{/link-to}}
+  </div>
+
+  <div class="modal fade" id="past-modal" tabindex="-1" role="dialog" aria-labelledby="past-modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="past-modal-title"><strong>Tell <em>Everyone</em> About Your Experience!</strong></h4>
+        </div>
+        <div class="modal-body">
+          <form class="past-form">
+            <div class="form-group">
+              <label>What was is called?:</label>
+              <div class='input-field'>
+              {{input class='input-area title-input form-control'
+                      required='true'
+                      placeholder='Event name...'
+                      value=festival.title}}
+                      {{!-- <input type='text' class="form-control" placeholder="Event Name..."> --}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>How'd you describe this show?</label>
+              <div class='input-field'>
+              {{input class='input-area descr'
+                      placeholder='Enter a description here...'
+                      value=festival.description}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Was it a specific type of EDM?</label>
+              <div class='input-field'>
+              {{input placeholder='Tropical, Hard-style, Dubstep, Chill, etc...'
+                      class='input-area'
+                      value=festival.genre}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Where did this go down?</label>
+              <div class='input-field'>
+              {{input placeholder='279 Tremont Street - Boston, Somewhere in upstate New York, Belgium...'
+                      class='input-area loc'
+                      value=festival.location}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Who hosted?</label>
+              <div class='input-field'>
+              {{input placeholder='Where ever it was is, somewhere was hosting...'
+                      class='input-area'
+                      value=festival.venue}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Let's see a picture!</label>
+              <div class='input-field'>
+              {{input placeholder='Enter valid image URL here... (only .jpg, .png, .gif are accepted)'
+                      required='true'
+                      class='input-area'
+                      value=festival.url}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Any idea of when it was?</label>
+              <div class='input-field'>
+              {{input placeholder="mm/dd/yyyy"
+                      type='date'
+                      class='input-area'
+                      value=festival.date}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>How much did tickets set you back?<br>(In U.S. Dollars)</label>
+              <div class='input-field'>
+              {{input placeholder='Enter price here (Numbers only)...'
+                      type='number'
+                      class='input-area'
+                      value=festival.price}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Tell us what you thought! </label>
+              <div class='input-field'>
+                {{input placeholder="Would you go again? Have you been since? Would you recommend it to friends? Tell us all about it!"
+                        value=festival.comment
+                        class='input-area comment-input'}}<br>
+
+                <button type='submit' class='btn btn-md submit-festival btn-primary'>Save Your Event To The List!</button>
+                <button {{action 'cancel'}} class='btn btn-md cancel-submit-btn btn-danger' data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="future-modal" tabindex="-1" role="dialog" aria-labelledby="future-modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="past-modal-title"><strong>Counting Down the Days Until This Event? Get <em>Everyone</em> As Excited As You Are!</strong></h4>
+        </div>
+        <div class="modal-body">
+          <form class="future-form">
+            <div class="form-group">
+              <label>What was is called?:</label>
+              <div class='input-field'>
+              {{input class='input-area title-input form-control'
+                      required='true'
+                      placeholder='Event name...'
+                      value=festival.title}}
+                      {{!-- <input type='text' class="form-control" placeholder="Event Name..."> --}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>How'd you describe this show?</label>
+              <div class='input-field'>
+              {{input class='input-area descr'
+                      placeholder='Enter a description here...'
+                      value=festival.description}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Was it a specific type of EDM?</label>
+              <div class='input-field'>
+              {{input placeholder='Tropical, Hard-style, Dubstep, Chill, etc...'
+                      class='input-area'
+                      value=festival.genre}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Where did this go down?</label>
+              <div class='input-field'>
+              {{input placeholder='279 Tremont Street - Boston, Somewhere in upstate New York, Belgium...'
+                      class='input-area loc'
+                      value=festival.location}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Who hosted?</label>
+              <div class='input-field'>
+              {{input placeholder='Where ever it was is, somewhere was hosting...'
+                      class='input-area'
+                      value=festival.venue}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Let's see a picture!</label>
+              <div class='input-field'>
+              {{input placeholder='Enter valid image URL here... (only .jpg, .png, .gif are accepted)'
+                      required='true'
+                      class='input-area'
+                      value=festival.url}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Any idea of when it was?</label>
+              <div class='input-field'>
+              {{input placeholder="mm/dd/yyyy"
+                      type='date'
+                      class='input-area'
+                      value=festival.date}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>How much did tickets set you back?<br>(In U.S. Dollars)</label>
+              <div class='input-field'>
+              {{input placeholder='Enter price here (Numbers only)...'
+                      type='number'
+                      class='input-area'
+                      value=festival.price}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Tell us what you thought! </label>
+              <div class='input-field'>
+                {{input placeholder="Would you go again? Have you been since? Would you recommend it to friends? Tell us all about it!"
+                        value=festival.comment
+                        class='input-area comment-input'}}<br>
+
+                <button type='submit' class='btn btn-md submit-festival btn-primary'>Save Your Event To The List!</button>
+                <button {{action 'cancel'}} class='btn btn-md cancel-submit-btn btn-danger' data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

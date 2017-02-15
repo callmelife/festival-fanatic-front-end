@@ -6851,6 +6851,45 @@ button.close {
   margin-left: -16.5%;
   width: 1200px; }
 
+.modals-title {
+  background-color: #fff;
+  border-radius: 20px;
+  color: #000;
+  text-align: center; }
+
+.genre-template {
+  padding-top: 50px; }
+
+.modal-filler-text {
+  background-color: #a50d0d;
+  height: 50px;
+  text-align: center;
+  width: 100%; }
+
+.past-modal {
+  background-color: #a50d0d;
+  display: block;
+  margin: 0 auto; }
+
+.future-modal {
+  background-color: #a50d0d;
+  display: block;
+  margin: 0 auto; }
+
+.modal-container {
+  background-color: #b7b7b2;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%; }
+
+.modal-btns {
+  background-color: #101ff2;
+  border-radius: 20px;
+  height: 85%;
+  margin-left: 25%;
+  width: 50%; }
+
 .features-step-btn:hover {
   background-color: #007207;
   color: #edc525;
