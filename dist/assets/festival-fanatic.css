@@ -6867,24 +6867,26 @@ button.close {
   width: 100%; }
 
 .past-modal {
-  background-color: #a50d0d;
   display: block;
   margin: 0 auto; }
 
 .future-modal {
-  background-color: #a50d0d;
   display: block;
   margin: 0 auto; }
 
 .modal-container {
   background-color: #b7b7b2;
+  border-radius: 10px;
   margin-bottom: 20px;
-  padding-top: 20px;
+  margin-left: 10%;
   padding-bottom: 20px;
-  width: 100%; }
+  padding-top: 20px;
+  width: 80%; }
 
 .modal-btns {
-  background-color: #101ff2;
+  background-color: #000;
+  -webkit-filter: greyscale(100%);
+          filter: greyscale(100%);
   border-radius: 20px;
   height: 85%;
   margin-left: 25%;

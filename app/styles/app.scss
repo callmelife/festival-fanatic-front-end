@@ -944,27 +944,31 @@ width: 100%;
 }
 
 .past-modal {
-  background-color: $red;
+  // background-color: $green;
   display: block;
   margin: 0 auto;
 }
 
 .future-modal {
-  background-color: $red;
+  // background-color: $red;
   display: block;
   margin: 0 auto;
 }
 
 .modal-container {
   background-color: $grey;
+  border-radius: 10px;
   margin-bottom: 20px;
-  padding-top: 20px;
+  margin-left: 10%;
   padding-bottom: 20px;
-  width: 100%;
+  padding-top: 20px;
+  width: 80%;
 }
 
 .modal-btns {
-  background-color: $blue;
+  background-color: #000;
+  // opacity: 0.9;
+  filter: greyscale(100%);
   border-radius: 20px;
   height: 85%;
   margin-left: 25%;
