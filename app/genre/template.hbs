@@ -1,41 +1,38 @@
 <div class='genre-display'>
-  <h1 class='genre-header'>What've you been listening to?</h1>
-  <form>
+  <div class='genre-container'>
+    <h1 class='genre-header'>What've you been listening to?</h1>
     <div class='edm-genre'>
-      <h3 class='genre-btn'>Electronic Music</h3>
       {{#link-to 'genre/edm'}}
-        <input type='checkbox'>
+      <a class='edm  genre-btn'>Electronic Music</a>
       {{/link-to}}
     </div>
     <div class='rock-genre'>
-      <h3 class='genre-btn'>Rock N' Roll</h3>
       {{#link-to 'genre/rock'}}
-        <input type='checkbox'>
+      <a class='rock genre-btn'>Rock N' Roll</a>
       {{/link-to}}
     </div>
-    <div class='rap-hiphop-genre'>
-      <h3 class='genre-btn'>Rap and Hip Hop</h3>
+    <div class='rap-genre'>
       {{#link-to 'genre/rap'}}
-        <input type='checkbox'>
+      <a class='rap genre-btn'>Rap and Hip Hop</a>
       {{/link-to}}
     </div>
     <div class='country-genre'>
-      <h3 class='genre-btn'>Country</h3>
       {{#link-to 'genre/country'}}
-        <input type='checkbox'>
+      <a class='country genre-btn'>Country</a>
       {{/link-to}}
     </div>
     <div class='jazz-genre'>
-      <h3 class='genre-btn'>Jazz</h3>
       {{#link-to 'genre/jazz'}}
-        <input type='checkbox'>
+      <a class='jazz genre-btn'>Jazz</a>
       {{/link-to}}
     </div>
     <div class='classic-genre'>
-      <h3 class='genre-btn'>Classical</h3>
       {{#link-to 'genre/classic'}}
-        <input type='checkbox'>
+      <a class='classic genre-btn'>Classical</a>
       {{/link-to}}
     </div>
-  </form>
+    {{#link-to 'welcome'}}
+      <button class='button3'>Go Back</button>
+    {{/link-to}}
+  </div>
 </div>

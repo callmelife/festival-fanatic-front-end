@@ -1,7 +1,7 @@
 
 @import 'bootstrap';
 @import 'bootstrap/theme';
-@import url('https://fonts.googleapis.com/css?family=Rightous|Eagle+Lake|Hanalei+Fill|Joti+One|Lily+Script+One|Metal+Mania|New+Rocker|Ravi+Prakash|Trade+Winds|UnifrakturCook:700|UnifrakturMaguntia|Arizonia|Kaushan+Script|Merienda+One|Niconne|Norican|Yesteryear|Bangers|Carter+One|Cherry+Cream+Soda|Contrail+One|Kumar+One|Righteous|Concert+One|Kavoon|Pattaya|Sriracha|Condiment|Damion|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Rightous|Eagle+Lake|Hanalei+Fill|Joti+One|Lily+Script+One|Metal+Mania|New+Rocker|Ravi+Prakash|Trade+Winds|UnifrakturCook:700|UnifrakturMaguntia|Arizonia|Kaushan+Script|Merienda+One|Niconne|Norican|Yesteryear|Bangers|Carter+One|Cherry+Cream+Soda|Contrail+One|Kumar+One|Righteous|Concert+One|Kavoon|Pattaya|Sriracha|Condiment|Damion|Pacifico|Swanky+and+Moo+Moo|Jolly+Lodger|Permanent+Marker|Playball');
 
 
 $green: #007207;
@@ -47,8 +47,101 @@ $dark-orange: #9e4801;
 // font-family: 'Cherry Cream Soda', cursive;
 // font-family: 'Carter One', cursive;
 
-.genre-display {
+.genre-header {
+  color: $red;
+  // font-family: 'Pacifico', cursive;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 56px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.genre-container {
   background-color: $white;
+  border-radius: 20px;
+  height: auto;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  margin-top: 50px;
+  position: relative;
+  width: 80%;
+}
+
+.genre-btn {
+  margin-bottom: 40px;
+}
+
+.edm-genre {
+  font-family: 'Kumar One', cursive;
+}
+
+.edm {
+ font-size: 30px;
+}
+
+.edm:hover {
+ text-decoration: none;
+}
+.edm:link {
+ text-decoration: none;
+}
+.edm:visited {
+ text-decoration: none;
+}
+.edm:active {
+ text-decoration: none;
+}
+
+.rock {
+ font-size: 34px;
+}
+
+.rap {
+ font-size: 40px;
+}
+
+.jazz {
+ font-size: 54px;
+}
+
+.country {
+ font-size: 38px;
+}
+
+.classic {
+ font-size: 42px;
+ padding-bottom: 30px;
+}
+
+.country-genre {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.classic-genre {
+  font-family: 'Playball', cursive;
+}
+
+.rock-genre {
+  font-family: 'New Rocker', cursive;
+  font-size: 48px;
+}
+.jazz-genre {
+  font-family: 'Swanky and Moo Moo', cursive;
+}
+
+.rap-genre {
+  font-family: 'Jolly Lodger', cursive;
+}
+
+.genre-display {
+  background-color: $red;
+  height: auto;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
   text-align: center;
   width: auto;
 }
@@ -74,7 +167,8 @@ $dark-orange: #9e4801;
 }
 
 .navbar-nav {
-  font-family: 'Contrail One', cursive;
+  // font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   font-size: 20px;
  }
 
@@ -85,14 +179,15 @@ $dark-orange: #9e4801;
 
 
 .navbar-brand {
-  font-family: 'Contrail One', cursive;
+  // font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
 }
 
 .sub-welcome-info {
   background-color: $grey;
   color: $red;
   border-radius: 15px;
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   font-size: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -105,7 +200,7 @@ $dark-orange: #9e4801;
   background-color: $grey;
   color: $red;
   border-radius: 15px;
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   font-size: 50px;
   margin-bottom: 25px;
   padding-left: 20px;
@@ -122,7 +217,7 @@ $dark-orange: #9e4801;
   // background-color: $grey;
   border-radius: 15px;
   color: $red;
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
@@ -136,7 +231,7 @@ $dark-orange: #9e4801;
   // background-color: $grey;
   border-radius: 15px;
   color: $red;
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   margin-bottom: 30px;
   padding-bottom: 30px;
   padding-left: 20px;
@@ -188,7 +283,7 @@ $dark-orange: #9e4801;
 }
 
 .instructions {
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   font-size: 25px;
   padding-left: 10px;
   padding-right: 10px;
@@ -215,7 +310,7 @@ $dark-orange: #9e4801;
 }
 
 .input-field {
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -280,17 +375,25 @@ width: 100%;
 
 .to-users-btn {
   margin-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   // float: left;
   // position: relative;
 }
 
 .to-mine-btn {
   margin-bottom: 40px;
+  padding-left: 15px;
 }
 
 .welcome-btns {
+  border: 1px $black solid;
+  border-radius: 15px;
   height: auto;
-  padding-left: 40px;
+  margin-bottom: 40px;
+  margin-left: 140px;
+  margin-right: 140px;
+  padding-top: 40px;
 }
 
 .festival-view-btn {
@@ -302,20 +405,25 @@ width: 100%;
 
 .welcome-options-container {
   background-color: $white;
+  border-radius: 20px;
   color: $black;
   height: auto;
   margin-bottom: 30px;
+  margin-left: 10%;
   padding-bottom: 30px;
   position: relative;
   text-align: center;
   top: 50px;
+  width: 80%;
 }
 
 .welcome-title {
   color: $red;
-  font-family: 'Pacifico', cursive;
+  // font-family: 'Pacifico', cursive;
+  font-family: 'Pattaya', sans-serif;
+  // font-family: 'Norican', cursive;
   font-size: 86px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-top: 40px;
   position: relative;
 
@@ -397,7 +505,7 @@ width: 100%;
     /*border: 1px solid black;*/
     font-size: 18px;
     letter-spacing: 3px;
-    font-family: arial;
+    font-family: 'Sriracha', cursive;
     font-variant: small-caps;
     text-align: center;
     position: relative;
@@ -624,6 +732,44 @@ width: 100%;
       border-radius: 15px;
   }
 
+  .button3 {
+      // font-family: 'Concert One', cursive;
+      background-color: #4CAF50; /* Green */
+      font-family: 'Pattaya', sans-serif;
+      border-radius: 15px;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 28px;
+      margin: 4px 2px;
+      position: relative;
+      top: 20px;
+      margin-bottom: 50px;
+      // left: 36%;
+      // bottom: 20px;
+      -webkit-transition-duration: 0.8s; /* Safari */
+      transition-duration: 0.8s;
+      cursor: pointer;
+  }
+
+
+  .button3 {
+      background-color: white;
+      color: $red;
+      border: 2px solid $red;
+      border-radius: 15px;
+  }
+
+  .button3:hover {
+      background-color: $red;
+      color: white;
+      border-radius: 15px;
+  }
+
+
 
 
 .festival-title {
@@ -759,7 +905,7 @@ width: 100%;
 .actual-info {
   background-color: $white;
   border-radius: 15px;
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   height: auto;
   margin-left: 5%;
   margin-bottom: 10px;
@@ -857,7 +1003,7 @@ width: 100%;
   border: 0;
   color: $white;
   cursor: pointer;
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   font-size: 15px;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -883,7 +1029,7 @@ width: 100%;
   border: 0;
   color: $white;
   cursor: pointer;
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   font-size: 20px;
   letter-spacing: 1px;
   margin-left: 35%;
@@ -896,7 +1042,7 @@ width: 100%;
   border: 0;
   color: $white;
   cursor: pointer;
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   font-size: 20px;
   letter-spacing: 1px;
   margin-left: 45%;
@@ -922,7 +1068,7 @@ width: 100%;
 .delete-card-btn {
   background-color: $red;
   color: $white;
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   letter-spacing: 1px;
   margin-bottom: 20px;
   margin-left: 40%;
@@ -972,7 +1118,7 @@ width: 100%;
 }
 
 .post-festival-btn {
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   margin-bottom: 20px;
   margin-left: 40%;
   margin-top: 20px;
@@ -1023,7 +1169,7 @@ width: 100%;
   background: $grey;
   border: 3px $white solid;
   border-radius: 15px;
-  font-family: 'Contrail One', cursive;
+  font-family: 'Sriracha', cursive;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -1226,6 +1372,7 @@ width: 100%;
 .classic-background {
   background-image: url("http://www.semensemble.org/files/resized/136006/cropped/1170;658;09e801b59b25e2334509b184f2d3ce2fb7040b3f.jpg");
   background-size: cover;
+  border-radius: 20px;
   height: 700px;
   margin-bottom: 20px;
   margin-left: -16.5%;
@@ -1235,6 +1382,7 @@ width: 100%;
 .jazz-background {
   background-image: url("http://www.normans.co.uk/blog/wp-content/uploads/2015/10/wallpaper-boy-woth-sax.jpg");
   background-size: cover;
+  border-radius: 20px;
   height: 700px;
   margin-bottom: 20px;
   margin-left: -16.5%;
@@ -1244,6 +1392,7 @@ width: 100%;
 .edm-background {
   background-image: url("http://www.travelweekly.com/uploadedImages/All_TW_Art/2016/053016/T0530ELECTRICDAISYCARNIVAL_C_HR.jpg?n=8098&width=1540&height=866&mode=crop&Anchor=MiddleCenter");
   background-size: cover;
+  border-radius: 20px;
   height: 700px;
   margin-bottom: 20px;
   margin-left: -16.5%;
@@ -1253,6 +1402,7 @@ width: 100%;
 .country-background {
   background-image: url("http://images1.laweekly.com/imager/u/745xauto/6856741/music1-1_4-28-16-e71c42ff11d23031.jpg");
   background-size: cover;
+  border-radius: 20px;
   height: 700px;
   margin-bottom: 20px;
   margin-left: -16.5%;
@@ -1262,6 +1412,7 @@ width: 100%;
 .rap-background {
   background-image: url("https://cdn0.vox-cdn.com/thumbor/q7ez2yCZkyDPHVL_1dX7_t82wF0=/0x0:964x643/1310x873/cdn0.vox-cdn.com/uploads/chorus_image/image/50056277/jay-z.0.png");
   background-size: cover;
+  border-radius: 20px;
   height: 700px;
   margin-bottom: 20px;
   margin-left: -16.5%;
@@ -1271,6 +1422,7 @@ width: 100%;
 .rock-background {
   background-image: url("http://www.siwallpaperhd.com/wp-content/uploads/2015/09/rock_music_festival_wallpaper.jpg");
   background-size: cover;
+  border-radius: 20px;
   height: 700px;
   margin-bottom: 20px;
   margin-left: -16.5%;
@@ -1280,6 +1432,7 @@ width: 100%;
 
 
 .genre-template {
+  // background-color: $white;
   padding-top: 50px;
 }
 
@@ -1292,6 +1445,19 @@ width: 100%;
   margin: 0 auto;
 }
 
+.past-modal-title,
+.future-modal-title {
+  font-family: 'Sriracha', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+.modal-label {
+  font-family: 'Sriracha', cursive;
+  font-size: 16px;
+
+}
+
 .future-modal {
   // background-color: $red;
   display: block;
@@ -1299,7 +1465,7 @@ width: 100%;
 }
 
 .modal-container {
-  background-color: $grey;
+  background-color: $white;
   border: 1px $black solid;
   border-radius: 10px;
   bottom: 30px;
@@ -1313,7 +1479,7 @@ width: 100%;
 }
 
 .modal-btns {
-  background-color: $grey;
+  background-color: $white;
   position: relative;
   border-radius: 20px;
   height: auto;
@@ -1325,8 +1491,8 @@ width: 100%;
 .modals-title {
   font-family: 'Pattaya', sans-serif;
   font-size: 56px;
-  background-color: $grey;
-  color: $black;
+  background-color: $white;
+  color: $red;
   position: relative;
   text-align: center;
   top: 30px;
@@ -1335,9 +1501,10 @@ width: 100%;
 
 .modal-filler-text {
 // font-family: 'Kavoon', cursive;
-font-family: 'Sriracha', cursive;//
+  font-family: 'Sriracha', cursive;
   font-size: 36px;
-  background-color: $grey;
+  background-color: $white;
+  color: $red;
   height: 50px;
   padding-left: 60px;
   padding-right: 60px;
