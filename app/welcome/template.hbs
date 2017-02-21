@@ -1,10 +1,21 @@
 <div class='auth-init'>
-  {{#link-to 'genre'}}
-    <button class='btn btn-primary genre-selector'>Ready to Make Some Memories?</button>
-  {{/link-to}}
-  {{#link-to 'festivals'}}
-    <button class='btn btn-primary genre-selector'>Just Lookin' For Now?</button>
-  {{/link-to}}
+  <div class='welcome-options-container'>
+    <h1 class='welcome-title'>Festival Fanatic!</h1>
+    <div class='welcome-btns'>
+        {{#link-to 'genre'}}
+          <button class='dope-button-square-redo to-genre-btn'>Add Your Story To Festival Fanatic</button><br>
+        {{/link-to}}
+        {{#link-to 'festivals'}}
+          <button class='dope-button-square-redo festival-view-btn'>Take A Look At Whats Been Posted</button><br>
+        {{/link-to}}
+        {{#link-to 'users'}}
+          <button class='dope-button-square-redo to-users-btn'>Who Else is on Festival Fanatic?</button><br>
+        {{/link-to}}
+        {{#link-to 'users'}}
+          <button class='dope-button-square-redo to-mine-btn'>View Your Additions to Festival Fanatic</button><br>
+        {{/link-to}}
+    </div>
+  </div>
 </div>
 
 {{!-- <div class='welcome-page-view'>
